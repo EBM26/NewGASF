@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="73px" height="58px" viewBox="0 0 73 58" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>TV</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="superfood" transform="translate(-192.000000, -367.000000)">
+            <g id="TV" transform="translate(192.469377, 367.760961)">
+                <rect id="Rectangle-12" fill="#ED2C2E" x="0" y="0" width="72" height="57" rx="14"></rect>
+                <text font-family="Montserrat-Bold, Montserrat" font-size="40" font-weight="bold" fill="#FFFFFF">
+                    <tspan x="10" y="48">TV</tspan>
+                </text>
+                <text id="AS-SEEN-ON" font-family="Montserrat-Medium, Montserrat Medium" font-size="9" font-weight="normal" fill="#FFFFFF">
+                    <tspan x="8" y="16">AS SEEN ON</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

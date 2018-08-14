@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="16px" viewBox="0 0 100 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>stars</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="8.5 13.2668737 3.2467111 16 4.25 10.2111456 -1.66533454e-16 6.11145618 5.87335555 5.26687371 8.5 0 11.1266445 5.26687371 17 6.11145618 12.75 10.2111456 13.7532889 16"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="superfood" transform="translate(-217.000000, -671.000000)">
+            <g id="hero">
+                <g id="stars" transform="translate(217.000000, 671.000000)">
+                    <polygon id="Star" fill="#EBB413" points="8.5 13.2668737 3.2467111 16 4.25 10.2111456 2.77555756e-16 6.11145618 5.87335555 5.26687371 8.5 0 11.1266445 5.26687371 17 6.11145618 12.75 10.2111456 13.7532889 16"></polygon>
+                    <polygon id="Star" fill="#EBB413" points="29.5 13.2668737 24.2467111 16 25.25 10.2111456 21 6.11145618 26.8733555 5.26687371 29.5 0 32.1266445 5.26687371 38 6.11145618 33.75 10.2111456 34.7532889 16"></polygon>
+                    <polygon id="Star" fill="#EBB413" points="50.5 13.2668737 45.2467111 16 46.25 10.2111456 42 6.11145618 47.8733555 5.26687371 50.5 0 53.1266445 5.26687371 59 6.11145618 54.75 10.2111456 55.7532889 16"></polygon>
+                    <polygon id="Star" fill="#EBB413" points="70.5 13.2668737 65.2467111 16 66.25 10.2111456 62 6.11145618 67.8733555 5.26687371 70.5 0 73.1266445 5.26687371 79 6.11145618 74.75 10.2111456 75.7532889 16"></polygon>
+                    <g id="Group-9" transform="translate(83.000000, 0.000000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="Star" fill="#CCCCCC" xlink:href="#path-1"></use>
+                        <rect id="Rectangle-11" fill="#EBB413" mask="url(#mask-2)" x="-10" y="-2" width="19" height="28"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="16px" viewBox="0 0 30 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>drop_down</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="superfood" transform="translate(-1075.000000, -5721.000000)" fill="#06A40A" fill-rule="nonzero">
+            <g id="Group-8" transform="translate(219.000000, 5707.000000)">
+                <g id="faq-line">
+                    <polygon id="drop_down" transform="translate(871.002121, 15.000000) rotate(-45.000000) translate(-871.002121, -15.000000) " points="861.502121 24.5 881.502121 24.5 881.502121 25.5 860.502121 25.5 860.502121 4.5 861.502121 4.5"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

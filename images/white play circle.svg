@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>white play circle</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="superfood" transform="translate(-275.000000, -6723.000000)">
+            <g id="Group-37" transform="translate(159.000000, 6657.000000)">
+                <g id="white-play-circle" transform="translate(116.000000, 66.000000)">
+                    <rect id="Rectangle-9" stroke="#FFFFFF" stroke-width="3" x="1.5" y="1.5" width="57" height="57" rx="28.5"></rect>
+                    <path d="M25.6041851,17.0845333 L42.7555275,28.3708631 C44.1395973,29.2816412 44.523276,31.141983 43.6124978,32.5260528 C43.3789053,32.8810332 43.0725641,33.1823379 42.7137606,33.4100142 L26.0041925,44.0129551 C24.605216,44.900666 22.7514896,44.4862033 21.8637787,43.0872268 C21.5698196,42.6239658 21.4085314,42.088962 21.3974606,41.5404184 L20.9556862,19.6511477 C20.9222539,17.9946307 22.2380241,16.6246563 23.894541,16.5912241 C24.5011969,16.5789804 25.0973058,16.7509846 25.6041851,17.0845333 Z" id="Combined-Shape" fill="#FFFFFF"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

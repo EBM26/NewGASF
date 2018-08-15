@@ -8,6 +8,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500" rel="stylesheet">
 	<title>Grown American<sup>&trade;</sup> Superfood</title>
 	<style>
+/*   general styling   */ 
 *{text-decoration: none; margin: 0; padding: 0; max-width: 100%;}
 html,body{margin: 0; padding: 0; font-family: 'Montserrat', sans-serif; color: #000; font-size: 16px; letter-spacing: 1px;}
 img{border: none;}
@@ -38,14 +39,20 @@ a:link, a:visited, a:active{text-decoration: none; color: inherit;}
 .column-left1{width: 47%;}
 .column-right1{float: left; width: 53%;}
 
-header{/*position: fixed;*/ padding: 10px 0; text-align: center; position: relative;}
+/*   header styling   */
+header{padding: 10px 0; text-align: center; position: relative;}
 header img{vertical-align: middle;}
 .nav-link{font-weight: bold; margin: 0 23px; cursor: pointer;}
 .CTA{display: inline-block; width: 140px; border-radius: 2px; background-color: #06A40A; color: #fff; font-weight: bold; padding: 15px 0;
 	 cursor: pointer; text-align: center;}
 
+/*   first-section styling   */
 .amazon-stars{display: block; padding-left: 80px; margin-top: -15px;}
 h1{font-size: 40px;}
+.top-list{margin-bottom: 30px; margin-left: 65px;}
+.top-list li{margin-bottom: 15px; list-style-image: url(images/check.svg); text-align: left;}
+#watch_video{margin-left: -250px; vertical-align: bottom;}
+#green-play{margin: 0 40px 0 10px; vertical-align: middle;}
 	</style>
 	<!--[if lt IE 9]>
 	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -55,7 +62,7 @@ h1{font-size: 40px;}
 		<header> <!-- **** fix making navbar position fixed **** -->
 			<div class="row">
 				<div class="container">
-					<a href=""><img src="images/logo.svg" alt="Grown American Superfood Logo"></a> <!-- **** add links **** -->
+					<a href=""><img src="images/logo.svg" alt="Grown American Superfood Logo"></a> <!-- **** add links (smoothscroll) **** -->
 					<a href="" class="nav-link">Problem</a>
 					<a href="" class="nav-link">Ingredients</a>
 					<a href="" class="nav-link">Experts</a>
@@ -66,7 +73,7 @@ h1{font-size: 40px;}
 				</div>
 			</div>
 		</header>
-		<div class="row section">
+		<div class="row section" id="first-section">
 			<div class="container">
 				<div class="column column-left1">
 					<img src="images/package.svg" alt="Grown American Superfood Package">
@@ -78,19 +85,30 @@ h1{font-size: 40px;}
 					<img src="images/badges.png" alt="certified badges">
 					<p class="margin20"><b>Get your free 14-Day Supply and 2 great free gifts</b></p>
 					<ul class="top-list">
-						<li>Total of $50 Value</li>
-						<li>Free Dr. Kallyann’s Cook Book</li>
-						<li>Free Grown American Superfood Shaker Cup</li>
+						<li>Total of <b>$50</b> Value</li>
+						<li><b>Free</b> Dr. Kallyann’s Cook Book</li>
+						<li><b>Free</b> Grown American Superfood Shaker Cup</li>
 					</ul>
 					<div class="buttons-div">
-						<img src="images/watch_video.svg" alt="watch video text">
-						<img src="images/green-play.svg" alt="play button icon">
+						<img src="images/watch_video.svg" alt="watch video text" id="watch_video">
+						<img src="images/green-play.svg" alt="play button icon" id="green-play">
 						<a href=""><div class="CTA">Try it Now</div></a>
 					</div>
-				</div>
+				</div> 
 				<div class="clear"></div>
-			</div>
-		</div>
+			</div> <!-- end of container -->
+		</div> <!-- end of row and first-section -->
+		<div class="row section" id="second-section">
+			<div class="container">
+				<div class="column column-left1">
+					
+				</div>
+				<div class="column center padtop30 column-right1">
+
+				</div> 
+				<div class="clear"></div>
+			</div> <!-- end of container -->
+		</div> <!-- end of row and first-section -->
 		<footer>
 			<div class="row">
 				<div class="container">

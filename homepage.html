@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
 	<meta name="format-detection" content="telephone=no">
 	<link rel="icon" type="image/x-icon" href="images/logo.png" />
-	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500" rel="stylesheet">
 	<title>Grown American<sup>&trade;</sup> Superfood</title>
 	<style>
 *{text-decoration: none; margin: 0; padding: 0; max-width: 100%;}
@@ -29,36 +29,66 @@ a:link, a:visited, a:active{text-decoration: none; color: inherit;}
 .uppercase{text-transform: uppercase;}
 .center{text-align: center;}
 .relative{position: relative;}
+.font20{font-size: 20px;}
+.margin20{margin: 20px 0;}
+.padtop30{padding-top: 30px;}
+.padleft50{padding-left: 50px;}
+.section{padding-top: 40px; padding-bottom: 40px;}
+.column{float: left; width: 50%;}
+.column-left1{width: 47%;}
+.column-right1{float: left; width: 53%;}
 
 header{/*position: fixed;*/ padding: 10px 0; text-align: center; position: relative;}
 header img{vertical-align: middle;}
 .nav-link{font-weight: bold; margin: 0 23px; cursor: pointer;}
 .CTA{display: inline-block; width: 140px; border-radius: 2px; background-color: #06A40A; color: #fff; font-weight: bold; padding: 15px 0;
-	 cursor: pointer;}
+	 cursor: pointer; text-align: center;}
+
+.amazon-stars{display: block; padding-left: 80px; margin-top: -15px;}
+h1{font-size: 40px;}
 	</style>
 	<!--[if lt IE 9]>
 	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
 	</head>
 	<body>
-
-		<header>
+		<header> <!-- **** fix making navbar position fixed **** -->
 			<div class="row">
 				<div class="container">
-					<img src="images/logo.svg" alt="Grown American Superfood Logo">
+					<a href=""><img src="images/logo.svg" alt="Grown American Superfood Logo"></a> <!-- **** add links **** -->
 					<a href="" class="nav-link">Problem</a>
 					<a href="" class="nav-link">Ingredients</a>
 					<a href="" class="nav-link">Experts</a>
 					<a href="" class="nav-link">Faq</a>
 					<a href="" class="nav-link">Reviews</a>
 					<a href="" class="nav-link">Contact</a>
-					<a href=""><div class="CTA">Try it Now</div></a>
+					<a href=""><div class="CTA">Try it Now</div></a>  <!-- **** fix hover over button effect **** -->
 				</div>
 			</div>
 		</header>
 		<div class="row section">
 			<div class="container">
-
+				<div class="column column-left1">
+					<img src="images/package.svg" alt="Grown American Superfood Package">
+					<img src="images/stars.svg" alt="Amazon stars" class="amazon-stars">
+				</div>
+				<div class="column center padtop30 column-right1">
+					<h1>Organic Superfood Nutrition Made Simple!</h1>
+					<p class="font20 margin20">Supercharge with the Farm-to-Table Goodness of <b>Grown American<sup>&trade;</sup></b> Superfood!</p>
+					<img src="images/badges.png" alt="certified badges">
+					<p class="margin20"><b>Get your free 14-Day Supply and 2 great free gifts</b></p>
+					<ul class="top-list">
+						<li>Total of $50 Value</li>
+						<li>Free Dr. Kallyann’s Cook Book</li>
+						<li>Free Grown American Superfood Shaker Cup</li>
+					</ul>
+					<div class="buttons-div">
+						<img src="images/watch_video.svg" alt="watch video text">
+						<img src="images/green-play.svg" alt="play button icon">
+						<a href=""><div class="CTA">Try it Now</div></a>
+					</div>
+				</div>
+				<div class="clear"></div>
 			</div>
 		</div>
 		<footer>

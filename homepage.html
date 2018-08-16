@@ -39,16 +39,20 @@ a:link, a:visited, a:active{text-decoration: none; color: inherit;}
 .marg40{margin: 40px 0;}
 .marg60{margin: 60px 0;}
 .marg3080{margin: 30px 80px;}
+.marside5percent{margin: 0 5%;}
 .marside10{margin: 0 10px;}
 .marside20{margin: 0 20px;}
 .marleft30{margin-left: 30px;}
 .marbot10{margin-bottom: 10px;}
 .marbot15{margin-bottom: 15px;}
 .marbot20{margin-bottom: 20px;}
-.marbot30{margin-bottom: 30px;}
+.marbot30{margin-bottom: 30px !important;}
+.marbot40{margin-bottom: 40px !important;}
 .martop20{margin-top: 20px !important;}
 .martop40{margin-top: 40px !important;}
 .martop170{margin-top: 170px !important;}
+.padbot10{padding-bottom: 10px;}
+.padbot40{padding-bottom: 40px !important;}
 .padtop0{padding-top: 0px !important;}
 .padtop10percent{padding-top: 10%;}
 .padtop20{padding-top: 20px;}
@@ -75,6 +79,7 @@ h1{font-size: 40px;}
 #watch_video{margin-left: -250px; vertical-align: bottom;}
 #green-play{margin: 0 40px 0 10px; vertical-align: middle;}
 .dashed{display: inline-block; width: 100px; vertical-align: 17px; border: 0; border-top: 1px dashed;}
+#tv-logo{position: absolute; top: 185px; left: 40px; transform: rotate(-25deg);}
 
 /*   second-section css   */
 .dashed-long{margin-top: -15px; width: 200px;}
@@ -107,10 +112,26 @@ h1{font-size: 40px;}
 .docbox{padding: 30px; background: #fff; box-shadow: 0 0 2px 1px rgba(0,0,0,0.05), 0 0 1px 0 #ABADAF; font-size: 15px}
 .doc-icon{margin-top: -100px; margin-bottom: 10px;}
 
-/*  fifth-section  css*/
-#video-div{background: url(images/old-lady2.jpg) no-repeat; width: 100%; height: 660px; background-size: cover;}
+/*  fifth-section css*/
+#video-div{background: url(images/old-lady2.jpg) no-repeat; width: 100%; height: 660px; background-size: cover; cursor: pointer;}
+#video-div .row{padding: 0 15px;}
 
+/*  sixth-section css*/
+.text-box p{padding-bottom: 10px;}
+.text-box{display: none;}
+.faq-div{cursor: pointer; border-bottom: 1px dashed; padding-bottom: 25px; margin-top: 25px;}
+.transition{transform: rotate(90deg); transition-timing-function: ease-in;}
+.show{display: block;} 
+.hide{display: none;}
+.arrow-icon{float: right;}
 
+/*  seventh-section css*/
+.review-div{float: left; width: 30%; position: relative;}
+.review-div p{font-size: 14px; margin: auto; width: 95%; margin-top: 10px;}
+.review-quote{bottom: -60px;}
+
+/*  seventh-section css*/
+footer{background: url(images/footer-image.jpg) no-repeat; background-size: cover; height: 100vh; padding-top: 40px; font-size: 12px;}
 	</style>
 	<!--[if lt IE 9]>
 	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -133,8 +154,9 @@ h1{font-size: 40px;}
 		</header>
 		<div class="row" id="first-section">
 			<div class="container">
-				<div class="column column47">
+				<div class="column column47 relative">
 					<img src="images/package.svg" alt="Grown American Superfood Package">
+					<img src="images/TV.svg" alt="as seen on TV logo" id="tv-logo">
 					<img src="images/stars.svg" alt="Amazon stars" class="amazon-stars">
 				</div>
 				<div class="column center padtop20 column53">
@@ -256,7 +278,7 @@ h1{font-size: 40px;}
 				<p class="bold font20 center">"5-7 Serving (of Fruits & Vegetables) a Day reduced risk of<br> dying, during the study period, by 36%" - Dr. Joel Kahn</p>
 				<div class="marg60 martop170">
 					<div class="column47 Fleft">
-						<div class="docbox">
+						<div class="docbox"> <!-- **** need to replace doctor images **** -->
 							<p class="bold Fright">DR. JOEL KAHN</p>
 							<img src="images/doc-kahn.png" alt="Dr. Joel Kahn" class="doc-icon">
 							<p class="marg20">One of the world's top cardiologists, DR. JOEL KAHN, is known as "America's Heart Healthy Doc".</p>
@@ -293,13 +315,95 @@ h1{font-size: 40px;}
 		</div> <!-- end of row and fourth-section -->
 		</div>
 		<div class="row grey-back" id="sixth-section">
-			<div class="container">
-				<h1 class="center marbot10">Hear From the Experts</h1>
-				
+			<div class="container"> <!-- **** fix put blueberry image on the side **** -->
+				<h1 class="center marbot10">Frequently Asked <br>Questions</h1>
+				<div class="marg60 marbot40">
+					<div class="faq-div">
+						<div class="padbot10"><img src="images/drop_down.svg" class="arrow-icon" alt="arrow down icon"> <span class="font20 bold">What ingredients are in Grown American Superfood?</span></div>
+						<div class="text-box">
+							<p>5 ORGANIC CONCENTRATED LEAFY GREENS: Kale, Spinach, Wheatgrass, Barley grass, Alfalfa grass o 6 ORGANIC VEGETABLES: Broccoli, Celery, Brussel Sprouts, Carrot, Green Bell Pepper, Pumpkin o 12 ORGANIC SPROUTS: Amaranth Sprout, Quinoa Sprout, Millet Sprout, Buckwheat Sprout, Garbanzo Bean Sprout, Lentil Sprout, Adzuki Sprout, Flax Sprout, Sunflower Sprout, Pumpkin Sprout, Chia Sprout, Sesame Sprout o 8 ORGANIC SUPERFRUITS: Blueberry, Strawberry, Cranberry, Orange, Cherry, Lemon, Pear, Apple.</p>
+						</div>
+					</div>
+				<div class="faq-div">
+					<div class="padbot10"><img src="images/drop_down.svg" class="arrow-icon" alt="arrow down icon"> <span class="font20 bold">Are all the fruits and vegetables in Grown American Superfood grown in the United States?</span></div>
+					<div class="text-box">
+							<p>Yes, all fruits and vegetables are grown in the United States by our family of organic American farmers.</p>
+					</div>
+				</div>
+				<div class="faq-div">
+					<div class="padbot10"><img src="images/drop_down.svg" class="arrow-icon" alt="arrow down icon"> <span class="font20 bold">Are all the fruits and vegetables in Grown American Superfood Organic?</span></div>
+					<div class="text-box">
+							<p>Yes, all the fruits and vegetables are USDA certified organic.</p>
+					</div>
+				</div>
+				<div class="faq-div">
+					<div class="padbot10"><img src="images/drop_down.svg" class="arrow-icon" alt="arrow down icon"> <span class="font20 bold">How many servings of fruits and vegetables are in a scoop of Grown American Superfood?</span></div>
+					<div class="text-box">
+							<p>There is a full serving of vegetable and half a serving of fruit.</p>
+					</div>
+				</div>
+				<div class="faq-div">
+					<div class="padbot10"><img src="images/drop_down.svg" class="arrow-icon" alt="arrow down icon"> <span class="font20 bold">Is Grown American Superfood Vegan, Gluten Free, soy free, dairy free?</span></div>
+					<div class="text-box">
+							<p>Yes, Grown American Superfood is Vegan. It is also Gluten Free, Soy free, and Dairy free. Grown American Superfood contains No Fat, No Fillers, NO added Sugar and No Cholesterol. Grown American Superfood Is Non-GMO (Not genetically modified).</p>
+					</div>
+				</div>
+				<div class="faq-div">
+					<div class="padbot10"><img src="images/drop_down.svg" class="arrow-icon" alt="arrow down icon"> <span class="font20 bold">How many calories are in each serving of Grown American Superfood?</span></div>
+					<div class="text-box">
+							<p>Grown American Superfood has only 25 calories per scoop.</p>
+					</div>
+				</div>
+				<div class="faq-div">
+					<div class="padbot10"><img src="images/drop_down.svg" class="arrow-icon" alt="arrow down icon"> <span class="font20 bold">How much sugar does Grown American Superfood contain?</span></div>
+					<div class="text-box">
+							<p>Grown American Superfood has 4g of sugar per serving. This sugar comes from the organic fruits and vegetables. There is NO added sugar in Grown American Superfood.</p>
+					</div>
+				</div>
+				<div class="faq-div">
+					<div class="padbot10"><img src="images/drop_down.svg" class="arrow-icon" alt="arrow down icon"> <span class="font20 bold">What are the benefits of consuming Fruits and Vegetables?</span></div>
+					<div class="text-box">
+							<p>According to the Center for Disease Control, eating between 5-9 servings of fruits and vegetables per day helps you maintain a healthy weight, reduces the risk for heart disease, stroke and some cancers.</p>
+							<p>Also, eating more fruits and Vegetables can help provide you with more energy and feel younger.</p>
+					</div>
+				</div>
+				</div>
 			</div> <!-- end of container -->
 		</div> <!-- end of row and sixth-section -->
-
-
+		<div class="row" id="seventh-section">
+			<div class="container">
+				<h1 class="center marbot10">The Reviews<br> Are In</h1>
+				<div class="center">
+			    	<img src="images/stars.svg" alt="Amazon stars">
+				</div>
+					<div class="marg60">
+						<div class="review-div"> <!-- **** fix have Tom place play svg in the middle of video cover **** -->
+							<img src="images/review1.png" alt="review video for Grown American Superfood">
+							<p>"It's a quick and affordable way to get my family to eat the fruits and vegetables they need every day."</p>
+							<img src="images/quote.svg" alt="Big quote" class="quote review-quote">
+						</div>
+						<div class="review-div marside5percent">
+							<img src="images/review2.png" alt="review video for Grown American Superfood">
+							<p>"I live on a farm and even having access to fruits and vegetables all day long, it's still hard to get home in time."</p>
+							<img src="images/quote.svg" alt="Big quote" class="quote review-quote">
+						</div>
+						<div class="review-div">
+							<img src="images/review3.png" alt="review video for Grown American Superfood">
+							<p>"As a mom I take my responsibility of what my kids put into their body very seriously."</p>
+							<img src="images/quote.svg" alt="Big quote" class="quote review-quote">
+						</div>
+						<div class="clear"></div>
+					</div>	
+			</div> <!-- end of container -->
+		</div> <!-- end of row and seventh-section -->
+		<footer>
+			<div class="row">
+				<div class="container center">
+					<p class="marbot30">© Copyright 2018 Grown American, LLC - All rights Reserved</p>
+					<img src="images/footer-logo.svg" alt="footer logo">
+				</div> <!-- end of container -->
+			</div> <!-- end of row and seventh-section -->
+		</footer>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script></script>
 	</body>

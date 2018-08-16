@@ -10,7 +10,7 @@
 	<style>
 /*   general styling   */ 
 *{text-decoration: none; margin: 0; padding: 0; max-width: 100%;}
-html,body{margin: 0; padding: 0; font-family: 'Montserrat', sans-serif; color: #000; font-size: 16px; letter-spacing: 1px;}
+html,body{margin: 0; padding: 0; font-family: 'Montserrat', sans-serif; color: #000; font-size: 16px; letter-spacing: 1px; font-weight: 500;}
 img{border: none;}
 li{list-style-type: none;}
 div{display: block; margin: 0; padding: 0;}
@@ -23,7 +23,7 @@ a:link, a:visited, a:active{text-decoration: none; color: inherit;}
 .Fleft{float: left;}
 .clear{clear: both;}
 .container{width: 1024px; margin: auto;}
-.row{padding: 0 15px;}
+.row{padding: 60px 15px;}
 .align-left{text-align: left;}
 .inline{display: inline;}
 .inline-block{display: inline-block;}
@@ -31,13 +31,20 @@ a:link, a:visited, a:active{text-decoration: none; color: inherit;}
 .center{text-align: center;}
 .relative{position: relative;}
 .font20{font-size: 20px;}
-.margin20{margin: 20px 0;}
+.marg20{margin: 20px 0;}
+.marg40{margin: 40px 0;}
+.marg60{margin: 60px 0;}
+.marside10{margin: 0 10px;}
+.marleft30{margin-left: 30px;}
+.marbot15{margin-bottom: 15px;}
+.marbot30{margin-bottom: 30px;}
+.padtop0{padding-top: 0px !important;}
 .padtop30{padding-top: 30px;}
 .padleft50{padding-left: 50px;}
-.section{padding-top: 40px; padding-bottom: 40px;}
 .column{float: left; width: 50%;}
-.column-left1{width: 47%;}
-.column-right1{float: left; width: 53%;}
+.column47{width: 47%;}
+.column53{width: 53%;}
+.grey-back{background: #f6f6f6;}
 
 /*   header styling   */
 header{padding: 10px 0; text-align: center; position: relative;}
@@ -53,6 +60,21 @@ h1{font-size: 40px;}
 .top-list li{margin-bottom: 15px; list-style-image: url(images/check.svg); text-align: left;}
 #watch_video{margin-left: -250px; vertical-align: bottom;}
 #green-play{margin: 0 40px 0 10px; vertical-align: middle;}
+.dashed{display: inline-block; width: 100px; vertical-align: 17px; border: 0; border-top: 1px dashed;}
+
+/*   second-section styling   */
+.dashed-long{margin-top: -15px; width: 200px;}
+.icon-div{text-align: center; display: inline-block; font-weight: bold; margin-right: 60px;}
+.icon-div:last-child{margin-right: 0px;}
+.icon-div img{margin-bottom: 10px;}
+
+/*   third-section styling   */
+#nutrition-facts{width: 240px; margin: 40px auto 80px; border: 1px solid #06A40A; border-radius: 2px; color: #06A40A; padding: 15px 0; 
+				 text-align: center; font-weight: bold; cursor: pointer;}
+.super-column{text-align: center; padding: 50px 0; width: 49%;}
+.dashed-right-border{border-right: 1px dashed;}
+.dashed-left-border{border-left: 1px dashed;}
+.dashed-bottom-border{border-bottom: 1px dashed;}
 	</style>
 	<!--[if lt IE 9]>
 	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -73,17 +95,17 @@ h1{font-size: 40px;}
 				</div>
 			</div>
 		</header>
-		<div class="row section" id="first-section">
+		<div class="row" id="first-section">
 			<div class="container">
-				<div class="column column-left1">
+				<div class="column column47">
 					<img src="images/package.svg" alt="Grown American Superfood Package">
 					<img src="images/stars.svg" alt="Amazon stars" class="amazon-stars">
 				</div>
-				<div class="column center padtop30 column-right1">
+				<div class="column center padtop30 column53">
 					<h1>Organic Superfood Nutrition Made Simple!</h1>
-					<p class="font20 margin20">Supercharge with the Farm-to-Table Goodness of <b>Grown American<sup>&trade;</sup></b> Superfood!</p>
-					<img src="images/badges.png" alt="certified badges">
-					<p class="margin20"><b>Get your free 14-Day Supply and 2 great free gifts</b></p>
+					<p class="font20 marg20">Supercharge with the Farm-to-Table Goodness of <b>Grown American<sup>&trade;</sup></b> Superfood!</p>
+					<hr class="dashed"> <img src="images/badges-mobile.png" alt="certified badges" class="marside10" width="290"> <hr class="dashed">
+					<p class="marg20"><b>Get your free 14-Day Supply and 2 great free gifts</b></p>
 					<ul class="top-list">
 						<li>Total of <b>$50</b> Value</li>
 						<li><b>Free</b> Dr. Kallyann’s Cook Book</li>
@@ -98,17 +120,82 @@ h1{font-size: 40px;}
 				<div class="clear"></div>
 			</div> <!-- end of container -->
 		</div> <!-- end of row and first-section -->
-		<div class="row section" id="second-section">
+		<div class="row grey-back" id="second-section">
 			<div class="container">
-				<div class="column column-left1">
-					
+				<h1 class="center marbot30">Only 10% of Americans eat<br> enough fruits & veggies</h1>
+				<p class="center font20 bold marbot15">We need Grown American Superfood!</p>
+				<hr class="dashed Fleft dashed-long"> <hr class="dashed Fright dashed-long">
+				<div class="clear"></div>
+				<p class="center">Contains 1.5 servings of fruits & vegetables in every scoop!</p>
+				<div class="marg60">
+					<div class="icon-div">
+						<img src="images/icon1-1.png" alt="certified Organic icon">
+						<p>Certified<br>Organic</p>
+					</div>
+					<div class="icon-div">
+						<img src="images/icon2-1.png" alt="Nutrient Dense icon">
+						<p>Nutrient<br>Dense</p>
+					</div>
+					<div class="icon-div">
+						<img src="images/icon3-1.png" alt="Farm to Table icon">
+						<p>Farm to<br>Table</p>
+					</div>
+					<div class="icon-div">
+						<img src="images/icon4-1.png" alt="Maximum Nutrition icon">
+						<p>Maximum<br>Nutrition</p>
+					</div>
+					<div class="icon-div">
+						<img src="images/icon5-1.png" alt="Trusted Brand icon">
+						<p>Trusted<br>Brand</p>
+					</div>
 				</div>
-				<div class="column center padtop30 column-right1">
-
+				<div class="column padtop30">
+					<p class="marg20">Our fast-paced, fast food, nutrient-poor lifestyle is turning us into a nation with epidemic levels of obesity, diabetes & heart disease.</p>
+					<p class="marg20">To reverse this trend, we need to eat 5-9 serving of fruits & veggies a day.</p>
+					<ul class="top-list marleft30">
+						<li>We try to go Farmer's Markets to buy organic</li>
+						<li>We try to grow our own vegetable gardens</li>
+						<li>We try juicing</li>
+					</ul>
+					<p class="marg20">... but all of this takes time and money we don't have!</p>
+					<p class="marg20">What we need is a real Superfood, that is super good, super fresh, super fast, super convenient &amp; super affordable!</p>
+				</div>
+				<div class="column center">
+					<img src="images/green-drink.png" alt="green Grown American Superfood drink">
 				</div> 
 				<div class="clear"></div>
 			</div> <!-- end of container -->
-		</div> <!-- end of row and first-section -->
+		</div> <!-- end of row and second-section -->
+		<div class="row" id="third-section">
+			<div class="container">
+				<h1 class="center marbot30">30+ Organic Fruits &amp;<br> Vegetables in Every Scoop</h1>
+				<div id="nutrition-facts">
+					<p>View Nutrition Facts</p>
+				</div>
+				<div class="column super-column padtop0 dashed-right-border">
+					<img src="images/healthy1-1.png" alt="Leafy Greens">
+					<p class="bold font20 marg20">5 Organic Concentrated<br> Leafy Greens</p>
+					<p>Kale, Spinach, Wheatgrass,<br> Barley grass, Alfalfa grass</p>
+				</div>
+				<div class="column super-column padtop0">
+					<img src="images/healthy2-1.png" alt="Superfruits">
+					<p class="bold font20 marg20">8 Organic Organic<br> Superfruits</p>
+					<p>Blueberry, Strawberry, Cranberry,<br> Orange, Cherry, Lemon, Pear, Apple</p>
+				</div> 
+				<div class="clear dashed-bottom-border"></div>
+				<div class="column super-column">
+					<img src="images/healthy3-1.png" alt="Vegetables">
+					<p class="bold font20 marg20">6 Organic Organic<br> Vegetables</p>
+					<p>Broccoli, Celery, Brussel Sprouts, Carrot,<br> Green Bell Pepper, Pumpkin</p>
+				</div>
+				<div class="column super-column dashed-left-border">
+					<img src="images/healthy4-1.png" alt="Sprouts">
+					<p class="bold font20 marg20">6 Organic<br> Sprouts</p>
+					<p>Amaranth, Quinoa, Millet, Buckwheat,<br> Garbanzo Bean, Lentil, Adzuki, Flax,<br> Sunflower, Pumpkin, Chia & Sesame</p>
+				</div> 
+				<div class="clear"></div>
+			</div> <!-- end of container -->
+		</div> <!-- end of row and third-section -->
 		<footer>
 			<div class="row">
 				<div class="container">

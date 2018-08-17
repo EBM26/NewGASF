@@ -67,18 +67,8 @@ a:link, a:visited, a:active{text-decoration: none; color: inherit;}
 /*   popup css   */
 #overlay{width: 100%; height: 100%; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0,0,0,.9); cursor: pointer; 
 		 -webkit-animation: fadein .5s; animation: fadein .5s; z-index: 200; display: none;}
-#close-overlay{right: 30px; top: -30px; z-index: 100; cursor: pointer; padding: 1px 10px; position:absolute;}
-#close-overlay:before, #close-overlay:after{position:absolute; top:9px; left:0px; content:''; display:block; width:30px; height:2px;
-			   background-color:#fff;z-index: 100;}
-#close-overlay:before{ -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    transform: rotate(45deg);}
-#close-overlay:after{ -webkit-transform:rotate(-45deg);
-    -moz-transform:rotate(-45deg);
-    transform:rotate(-45deg);
-    right:2px;}
+#close-overlay{right: 30px; top: -50px; z-index: 100; cursor: pointer; padding: 1px 10px; position:absolute; color: #fff; font-weight: 100;
+			  font-size: 30px;}
 
 /*   header css   */
 header{text-align: center; position: fixed; top: 0; background: #fff; z-index: 100; width: 100%;}
@@ -115,6 +105,7 @@ h1{font-size: 40px;}
 /*   third-section css   */
 #nutrition-facts{width: 240px; margin: 40px auto 80px; border: 1px solid #06A40A; border-radius: 2px; color: #06A40A; padding: 15px 0; 
 				 text-align: center; font-weight: bold; cursor: pointer;}
+#nutrition-facts:hover{background-color: #06A40A; color: #fff;}
 .super-column{text-align: center; padding: 50px 0; width: 49%;}
 .dashed-right-border{border-right: 1px dashed;}
 .dashed-left-border{border-left: 1px dashed;}
@@ -150,6 +141,7 @@ h1{font-size: 40px;}
 .hide{display: none;}
 .arrow-icon{float: right;}
 #blueberries{position: absolute; right: -45px; top: -45px;}
+.transition{transform: rotate(180deg); transition-timing-function: ease-in;}
 
 /*  seventh-section css*/
 .review-div{float: left; width: 30%; position: relative;}
@@ -167,15 +159,15 @@ footer{background: url(images/footer-image.jpg) no-repeat; background-size: cove
 		<div id="overlay">
 			<div class="row">
 				<div class="container relative">
-				<div id="close-overlay"></div>
+				<div id="close-overlay">X</div>
 			<div id="overlay-content"></div>
 			</div> <!-- end of container -->
 		</div> <!-- end of row and first-section -->
-		</div>
+		</div> 
 		<header> <!-- **** fix making navbar position fixed **** -->
 			<div class="row">
 				<div class="container">
-					<a href="#first-section"><img src="images/logo.svg" alt="Grown American Superfood Logo"></a>
+					<a href="#first-section" class="home-link"><img src="images/logo.svg" alt="Grown American Superfood Logo"></a>
 					<a href="#second-section" class="nav-link">Problem</a>
 					<a href="#third-section" class="nav-link">Ingredients</a>
 					<a href="#fourth-section" class="nav-link">Experts</a>
@@ -412,18 +404,18 @@ footer{background: url(images/footer-image.jpg) no-repeat; background-size: cove
 			    	<img src="images/stars.svg" alt="Amazon stars">
 				</div>
 					<div class="marg60">
-						<div class="review-div"> <!-- **** fix have Tom place play svg in the middle of video cover **** -->
-							<img src="images/review1.png" alt="review video for Grown American Superfood">
+						<div class="review-div">
+							<img src="images/review1.jpg" alt="review video for Grown American Superfood" id="review1">
 							<p>"It's a quick and affordable way to get my family to eat the fruits and vegetables they need every day."</p>
 							<img src="images/quote.svg" alt="Big quote" class="quote review-quote">
 						</div>
 						<div class="review-div marside5percent">
-							<img src="images/review2.png" alt="review video for Grown American Superfood">
+							<img src="images/review2.jpg" alt="review video for Grown American Superfood" id="review2">
 							<p>"I live on a farm and even having access to fruits and vegetables all day long, it's still hard to get home in time."</p>
 							<img src="images/quote.svg" alt="Big quote" class="quote review-quote">
 						</div>
 						<div class="review-div">
-							<img src="images/review3.png" alt="review video for Grown American Superfood">
+							<img src="images/review3.jpg" alt="review video for Grown American Superfood" id="review3">
 							<p>"As a mom I take my responsibility of what my kids put into their body very seriously."</p>
 							<img src="images/quote.svg" alt="Big quote" class="quote review-quote">
 						</div>

@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
 	  // nav links smoothscroll
-	  $(".nav-link").click(function(e) {
+	  $(".nav-link, .home-link").click(function(e) {
 	  e.preventDefault();
 	  var target = $(this).attr("href");
 	  $('html, body').animate({
@@ -9,10 +9,40 @@ $(document).ready(function() {
 	  }, 2000);
 	})
 
-	// first video overlay paly
+	// main video overlay play
 	$("#green-play").click(function(){
 		$("#overlay").fadeIn();
 		$("#overlay-content").html('<script src="https://fast.wistia.com/embed/medias/28jaglq0tq.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_28jaglq0tq videoFoam=true" style="height:100%;position:relative;width:100%">&nbsp;</div></div></div>')
+	});
+
+	// nutrition facts overlay 
+	$("#nutrition-facts").click(function(){
+		$("#overlay").fadeIn();
+		$("#overlay-content").html('<div class="center"><img src="images/nutrition-facts.jpg" alt="nutrition facts"></div>')
+	});
+
+	// taste test video overlay 
+	$("#video-div").click(function(){
+		$("#overlay").fadeIn();
+		$("#overlay-content").html('<script src="https://fast.wistia.com/embed/medias/5uont5qshk.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_5uont5qshk videoFoam=true" style="height:100%;position:relative;width:100%">&nbsp;</div></div></div>')
+	});
+
+	// review 1 video overlay 
+	$("#review1").click(function(){
+		$("#overlay").fadeIn();
+		$("#overlay-content").html('<script src="https://fast.wistia.com/embed/medias/q6wf9yjzp8.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_q6wf9yjzp8 videoFoam=true" style="height:100%;position:relative;width:100%">&nbsp;</div></div></div>')
+	});
+
+	// review 2 video overlay 
+	$("#review2").click(function(){
+		$("#overlay").fadeIn();
+		$("#overlay-content").html('<script src="https://fast.wistia.com/embed/medias/6floxwzyhb.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="padding:56.21% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_6floxwzyhb videoFoam=true" style="height:100%;position:relative;width:100%">&nbsp;</div></div></div>')
+	});
+
+	// review 3 video overlay 
+	$("#review3").click(function(){
+		$("#overlay").fadeIn();
+		$("#overlay-content").html('<script src="https://fast.wistia.com/embed/medias/q6wf9yjzp8.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_q6wf9yjzp8 videoFoam=true" style="height:100%;position:relative;width:100%">&nbsp;</div></div></div>')
 	});
 
 	// close overlay
@@ -20,6 +50,24 @@ $(document).ready(function() {
 		$("#overlay").fadeOut();
 	})
 
+	$(".faq-div").click(function(){
+
+		if(!$(this).hasClass("active")) {
+			$(".faq-div").removeClass("active")
+			$(".text-box").slideUp("slow");
+			$(".arrow-icon").removeClass("transition");
+			$(this).addClass("active");
+			$(this).find(".text-box").slideDown("slow")
+			$(this).find(".arrow-icon").addClass("transition");
+			}
+
+		    else if($(this).hasClass("active")) {
+				$(this).removeClass("active")
+				$(".text-box").slideUp("slow");
+				$(".arrow-icon").removeClass("transition");
+			  }
+
+	}) // click function
 
 	  //  new year
 	  now = new Date;
@@ -30,7 +78,7 @@ $(document).ready(function() {
 
 }); // end of document function
 
-
+// adding box shadow when navbar scrolls down
 var nav 	 = document.querySelector('header');
 var Win      = window;
 var topDiv 	 = document.querySelector('#first-section');

@@ -153,13 +153,13 @@ h1{font-size: 40px;}
 footer{background: url(images/footer-image.jpg) no-repeat; background-size: cover; height: 100vh; padding-top: 40px; font-size: 12px;}
 
 /* mobile navbar css */
-.mobile-menu{display: block; width: 100%; background: #06A40A; z-index: 9998; transition: 0.6s ease; opacity: 0;
+.mobile-menu{display: none; width: 100%; background: #06A40A; z-index: 9998; transition: 0.6s ease; opacity: 0;
 			 padding: 10px 0; position: absolute; top: 80px; left: 0;}
 .mobile-menu ul li{list-style: none; margin-bottom: 10px;}
 .mobile-menu ul li:last-child{margin-bottom: 0px;}
 .mobile-menu ul li a{display: block; text-align: center; text-decoration: none; color: #fff;}
 
-.mobile-menu--open{opacity: 1;}
+.mobile-menu--open{opacity: 1; display: block;}
 .mobile-nav-button{width: 35px; position: absolute; margin: 2rem; left: 0; top: 0; z-index: 9999; cursor: pointer; height: 30px;}
 .mobile-nav-button .mobile-nav-button__line{width: 100%; height: 3px; background: #06A40A; position: relative; transition: 1s ease;}
 .mobile-nav-button .mobile-nav-button__line:nth-of-type(2){margin: 0.4rem 0;}
@@ -181,6 +181,18 @@ footer{background: url(images/footer-image.jpg) no-repeat; background-size: cove
 	.dashed{width: 85px;}
 	.amazon-stars{position: absolute; right: 60px; bottom: 5px;}
 	#tv-logo{position: absolute; top: 440px; left: 215px;}
+	.icon-div{width: 99px;}
+	.width66per{width: 66%;}
+	.tablet-drink{position: absolute; right: -60px; top: 60px;}
+	.pad506{padding: 50px 6px;}
+	.pad8045{padding: 80px 45px;}
+	.farmer-content{width: 460px;}
+	.mobile100per{width: 100%;}
+	.martop110{margin-top: 110px;}
+	.mobileMarBot0{margin-bottom: 0;}
+	.mobilePadBot20{padding-bottom: 20px;}
+	.tablet-column{width: 75%; float: none !important; margin: auto; padding-top: 35%;}
+	#blueberries{right: -175px;}
 }
 
 	</style>
@@ -292,7 +304,8 @@ footer{background: url(images/footer-image.jpg) no-repeat; background-size: cove
 						<p>Trusted<br>Brand</p>
 					</div>
 				</div>
-				<div class="column padtop30">
+				<div class="relative">
+				<div class="column padtop30 width66per">
 					<p class="marg20">Our fast-paced, fast food, nutrient-poor lifestyle is turning us into a nation with epidemic levels of obesity, diabetes & heart disease.</p>
 					<p class="marg20">To reverse this trend, we need to eat 5-9 serving of fruits & veggies a day.</p>
 					<ul class="top-list marleft30">
@@ -303,10 +316,11 @@ footer{background: url(images/footer-image.jpg) no-repeat; background-size: cove
 					<p class="marg20">... but all of this takes time and money we don't have!</p>
 					<p class="marg20">What we need is a real Superfood, that is super good, super fresh, super fast, super convenient &amp; super affordable!</p>
 				</div>
-				<div class="column center">
+				<div class="column center tablet-drink">
 					<img src="images/green-drink.png" alt="green Grown American Superfood drink">
 				</div> 
 				<div class="clear"></div>
+				</div>
 			</div> <!-- end of container -->
 		</div> <!-- end of row and second-section -->
 		<div class="row" id="third-section">
@@ -320,7 +334,7 @@ footer{background: url(images/footer-image.jpg) no-repeat; background-size: cove
 					<p class="bold font20 marg20">5 Organic Concentrated<br> Leafy Greens</p>
 					<p>Kale, Spinach, Wheatgrass,<br> Barley grass, Alfalfa grass</p>
 				</div>
-				<div class="column super-column padtop0">
+				<div class="column super-column padtop0 pad506">
 					<img src="images/healthy2-1.png" alt="Superfruits">
 					<p class="bold font20 marg20">8 Organic Organic<br> Superfruits</p>
 					<p>Blueberry, Strawberry, Cranberry,<br> Orange, Cherry, Lemon, Pear, Apple</p>
@@ -331,7 +345,7 @@ footer{background: url(images/footer-image.jpg) no-repeat; background-size: cove
 					<p class="bold font20 marg20">6 Organic Organic<br> Vegetables</p>
 					<p>Broccoli, Celery, Brussel Sprouts, Carrot,<br> Green Bell Pepper, Pumpkin</p>
 				</div>
-				<div class="column super-column dashed-left-border">
+				<div class="column super-column dashed-left-border pad506r">
 					<img src="images/healthy4-1.png" alt="Sprouts" class="martop20">
 					<p class="bold font20 marg20 martop40">6 Organic<br> Sprouts</p>
 					<p>Amaranth, Quinoa, Millet, Buckwheat,<br> Garbanzo Bean, Lentil, Adzuki, Flax,<br> Sunflower, Pumpkin, Chia & Sesame</p>
@@ -385,12 +399,12 @@ footer{background: url(images/footer-image.jpg) no-repeat; background-size: cove
 				</div>
 			</div> <!-- end of container -->
 		</div> <!-- end of row and third-section -->
-		<div class="row grey-back" id="fourth-section">
+		<div class="row grey-back pad8045 mobilePadBot20" id="fourth-section">
 			<div class="container">
 				<h1 class="center marbot10">Hear From the Experts</h1>
 				<p class="bold font20 center">"5-7 Serving (of Fruits & Vegetables) a Day reduced risk of<br> dying, during the study period, by 36%" - Dr. Joel Kahn</p>
 				<div class="marg60 martop170">
-					<div class="column47 Fleft">
+					<div class="column47 Fleft mobile100per">
 						<div class="docbox"> <!-- **** need to replace doctor images **** -->
 							<p class="bold Fright">DR. JOEL KAHN</p>
 							<img src="images/doc-kahn.png" alt="Dr. Joel Kahn" class="doc-icon">
@@ -401,7 +415,7 @@ footer{background: url(images/footer-image.jpg) no-repeat; background-size: cove
 							<p class="marg20">His personal mission is to prevent 1 million heart attacks over the next 2 years by breaking through to the public about how you can prevent and reverse disease by simply adding more fruits and vegetables to your diet.</p>
 						</div>
 					</div>
-					<div class="column47 Fright">
+					<div class="column47 Fright mobile100per martop110">
 						<div class="docbox">
 							<p class="bold Fright">DR. KELLYANN PETRUCCI</p>
 							<img src="images/doc-kelly.png" alt="DR. KELLYANN PETRUCCI" class="doc-icon">
@@ -409,7 +423,7 @@ footer{background: url(images/footer-image.jpg) no-repeat; background-size: cove
 							<p class="marg20">She is a New York Times best selling author and the host of the PBS special, 21 Days to a Slimmer, Younger You.</p>
 							<p class="marg20">As a weight loss and natural anti-aging transformation expert, Dr. Petrucci is a regular guest on television shows including The Doctors, Dr. Oz, and national news programs, and has authored six books.</p>
 						</div>
-						<div class="marg40 center">
+						<div class="marg40 center mobileMarBot0">
 						<img src="images/logo-oz.png" alt="the OZ Show logo"> <img src="images/logo-doctors.png" alt="the Doctors Show logo" class="marside20"> <img src="images/logo-PBS.png" alt="PBS logo">
 						</div>
 					</div> 
@@ -420,7 +434,7 @@ footer{background: url(images/footer-image.jpg) no-repeat; background-size: cove
 		<div id="video-div">
 			<div class="row" id="fifth-section">
 				<div class="container">
-					<div class="column Fright padtop10percent">
+					<div class="column Fright padtop10percent tablet-column">
 						<h1 class="white font50 center">Grown American<br> Superfood...<br>Super Delicious!</h1>
 						<img src="images/play-white.svg" alt="play video icon and text" class="marg3080">
 					</div>

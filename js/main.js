@@ -175,7 +175,7 @@ var slider = function() {
 		$( ".mobile-nav-button .mobile-nav-button__line:nth-of-type(2)" ).toggleClass( "mobile-nav-button__line--2");  
 		$( ".mobile-nav-button .mobile-nav-button__line:nth-of-type(3)" ).toggleClass( "mobile-nav-button__line--3");  
 
-		$('.mobile-menu').toggleClass('mobile-menu--open');
+		$('.mobile-menu').toggleClass('mobile-menu--open');  // **** change to toggle function of slide up and down 
 		return false;
 	}); 
 

@@ -64,10 +64,11 @@ a:link, a:visited, a:active{text-decoration: none; color: inherit;}
 .column53{width: 53%;}
 .grey-back{background: #f6f6f6; box-shadow: 0 0 2px 1px rgba(0,0,0,0.05), 0 0 1px 0 #ABADAF;}
 .desktop-hide{display: none;}
+.justMobileShow{display: none;}
 
 /*   popup css   */
 #overlay{width: 100%; height: 100%; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0,0,0,.9); cursor: pointer; 
-		 -webkit-animation: fadein .5s; animation: fadein .5s; z-index: 200; display: none;}
+		 -webkit-animation: fadein .5s; animation: fadein .5s; z-index: 200; display: none; overflow: scroll;}
 #close-overlay{right: 30px; top: -50px; z-index: 100; cursor: pointer; padding: 1px 10px; position:absolute; color: #fff; font-weight: 100;
 			  font-size: 30px;}
 
@@ -98,12 +99,14 @@ h1{font-size: 40px;}
 .dashed{display: inline-block; width: 100px; vertical-align: 17px; border: 0; border-top: 1px dashed;}
 #tv-logo{position: absolute; top: 185px; left: 40px; transform: rotate(-25deg);}
 .badges{width: 290px;}
+.mobile-list{display: none;}
 
 /*   second-section css   */
 .dashed-long{margin-top: -15px; width: 200px;}
 .icon-div{text-align: center; display: inline-block; font-weight: bold; margin-right: 55px;}
 .icon-div:last-child{margin-right: 0px;}
 .icon-div img{margin-bottom: 10px;}
+.mobile-icon-wrapper{text-align: left; display: inline-block;}
 
 /*   third-section css   */
 #nutrition-facts{width: 240px; margin: 40px auto 80px; border: 1px solid #06A40A; border-radius: 2px; color: #06A40A; padding: 15px 0; 
@@ -196,19 +199,27 @@ footer{background: url(images/footer-image.jpg) no-repeat; background-size: cove
 }
 
 /*  mobile only css  */
-@media only screen and (max-width: 768px) {
-	html,body{font-size: 14px;}
+@media only screen and (max-width: 736px) {
+	html,body{font-size: 14px; overflow-x: hidden;}
 	.mobile-nav-button{width: 30px; margin: 1rem; top: 5px;}
 	.mobile-nav-button .mobile-nav-button__line{height: 2px;}
 	.mobile-logo{position: absolute; left: 58px; top: 10px; width: 70px;}
 	#mobile-CTA{margin-top: 0px; width: 120px; padding: 5px 0;}
 	header{height: 55px;}
 	.mobile-menu{top: 55px;}
-	h1{font-size: 20px;}
+	h1{font-size: 140%;}
 	.mobileFont14{font-size: 14px;}
 	.mobileMarg10{margin: 10px 0;}
-	.justMobileHide{display: none;}
+	.mobileMarg30{margin: 30px 0;}
+	.mobileMargBot10{margin-bottom: 10px !important;}
 	.justMobileShow{display: block;}
+	.justMobileHide{display: none;}
+	.JMNoMarg{margin: 0 !important}
+	.JM100Per{float: none; width: 100%;}
+	.JMNoPad{padding: 0 !important;}
+	.JMNoPadBot{padding-bottom: 0 !important;}
+	.mobile-row{padding: 40px 15px;}
+	.mobile-noBorder{border: 0;}
 
 	/*   first-section css   */
 	#first-section{margin-top: 0px; padding-bottom: 10px;}
@@ -218,8 +229,15 @@ footer{background: url(images/footer-image.jpg) no-repeat; background-size: cove
 	#tv-logo{top: 250px; left: 190px; width: 50px;}
 	#first-section .column53{text-align: left; padding-top: 15px;}
 	.badges{width: 175px; margin-left: 30px;}
-	#green-play{margin: 0 10px 0 30px; width: 45px;}
+	#mobile-green-play{margin: 0 10px 0 30px; width: 45px; vertical-align: middle;}
 	#justMobileCTA{width: 110px; padding: 10px 0;}
+	.top-list{margin-left: 20px;}
+	.mobile-list{display: block; margin-top: 15%; position: relative; text-align: center;}
+	.icon-div{width: 80px; margin-right: 15px;}
+	.mobile-icon-wrapper{display: block; text-align: center; margin-top: 30px;}
+	.tablet-drink{position: static; float: none; width: 100%; text-align: center;}
+	.super-column{float: none; width: 100%; border: 0; padding: 0 0 50px !important;}
+	#nutrition-facts{margin-bottom: 40px;}
 }
 
 	</style>
@@ -286,7 +304,7 @@ footer{background: url(images/footer-image.jpg) no-repeat; background-size: cove
 					<p class="font20 marg20 mobileFont14 mobileMarg10">Supercharge with the Farm-to-Table Goodness of <b>Grown American<sup>&trade;</sup></b> Superfood!</p>
 					<hr class="dashed justMobileHide"> <img src="images/badges-mobile.png" alt="certified badges" class="marside10 badges"> <hr class="dashed justMobileHide">
 					<div class="center justMobileShow mobileMarg10 mobileButtons">
-						<img src="images/green-play.svg" alt="play button icon" id="green-play">
+						<img src="images/green-play.svg" alt="play button icon" id="mobile-green-play">
 						<a href="secureOrder.html"><div class="CTA" id="justMobileCTA">Try it Now</div></a>
 					</div>
 					<div class="justMobileHide">
@@ -304,8 +322,8 @@ footer{background: url(images/footer-image.jpg) no-repeat; background-size: cove
 					</div>
 				</div> 
 				<div class="clear"></div>
-				<div class="justMobileShow center marg20">
-					<p class="marg20"><b>Get your free 14-Day Supply and 2 great free gifts</b></p>
+				<div class="mobile-list">
+					<p class="marg20"><b>Get your free 14-Day Supply<br> and 2 great free gifts</b></p>
 					<ul class="top-list">
 						<li>Total of <b>$50</b> Value</li>
 						<li><b>Free</b> Dr. Kallyann’s Cook Book</li>
@@ -314,14 +332,14 @@ footer{background: url(images/footer-image.jpg) no-repeat; background-size: cove
 				</div>
 			</div> <!-- end of container -->
 		</div> <!-- end of row and first-section -->
-		<div class="row grey-back" id="second-section">
+		<div class="row grey-back mobile-row JMNoPadBot" id="second-section">
 			<div class="container">
-				<h1 class="center marbot30">Only 10% of Americans eat<br> enough fruits & veggies</h1>
-				<p class="center font20 bold marbot15">We need Grown American Superfood!</p>
-				<hr class="dashed Fleft dashed-long"> <hr class="dashed Fright dashed-long">
+				<h1 class="center marbot30 mobileMargBot10">Only 10% of Americans eat<br> enough fruits & veggies</h1>
+				<p class="center font20 bold marbot15 mobileFont14">We need Grown American Superfood!</p>
+				<hr class="dashed Fleft dashed-long justMobileHide"> <hr class="dashed Fright dashed-long justMobileHide">
 				<div class="clear"></div>
 				<p class="center">Contains 1.5 servings of fruits & vegetables in every scoop!</p>
-				<div class="marg60">
+				<div class="marg60 mobileMarg30">
 					<div class="icon-div">
 						<img src="images/icon1-1.png" alt="certified Organic icon">
 						<p>Certified<br>Organic</p>
@@ -330,10 +348,11 @@ footer{background: url(images/footer-image.jpg) no-repeat; background-size: cove
 						<img src="images/icon2-1.png" alt="Nutrient Dense icon">
 						<p>Nutrient<br>Dense</p>
 					</div>
-					<div class="icon-div">
+					<div class="icon-div JMNoMarg">
 						<img src="images/icon3-1.png" alt="Farm to Table icon">
 						<p>Farm to<br>Table</p>
 					</div>
+					<div class="mobile-icon-wrapper">
 					<div class="icon-div">
 						<img src="images/icon4-1.png" alt="Maximum Nutrition icon">
 						<p>Maximum<br>Nutrition</p>
@@ -342,9 +361,10 @@ footer{background: url(images/footer-image.jpg) no-repeat; background-size: cove
 						<img src="images/icon5-1.png" alt="Trusted Brand icon">
 						<p>Trusted<br>Brand</p>
 					</div>
+					</div>
 				</div>
 				<div class="relative">
-				<div class="column padtop30 width66per">
+				<div class="column padtop30 width66per JMNoPad JM100Per">
 					<p class="marg20">Our fast-paced, fast food, nutrient-poor lifestyle is turning us into a nation with epidemic levels of obesity, diabetes & heart disease.</p>
 					<p class="marg20">To reverse this trend, we need to eat 5-9 serving of fruits & veggies a day.</p>
 					<ul class="top-list marleft30">
@@ -362,7 +382,7 @@ footer{background: url(images/footer-image.jpg) no-repeat; background-size: cove
 				</div>
 			</div> <!-- end of container -->
 		</div> <!-- end of row and second-section -->
-		<div class="row" id="third-section">
+		<div class="row mobile-row" id="third-section">
 			<div class="container">
 				<h1 class="center marbot30">30+ Organic Fruits &amp;<br> Vegetables in Every Scoop</h1>
 				<div id="nutrition-facts">
@@ -378,7 +398,7 @@ footer{background: url(images/footer-image.jpg) no-repeat; background-size: cove
 					<p class="bold font20 marg20">8 Organic Organic<br> Superfruits</p>
 					<p>Blueberry, Strawberry, Cranberry,<br> Orange, Cherry, Lemon, Pear, Apple</p>
 				</div> 
-				<div class="clear dashed-bottom-border"></div>
+				<div class="clear dashed-bottom-border mobile-noBorder"></div>
 				<div class="column super-column">
 					<img src="images/healthy3-1.png" alt="Vegetables">
 					<p class="bold font20 marg20">6 Organic Organic<br> Vegetables</p>

@@ -10,7 +10,7 @@ $(document).ready(function() {
 	})
 
 	// main video overlay play
-	$("#green-play").click(function(){
+	$("#green-play, #mobile-green-play").click(function(){
 		$("#overlay").fadeIn();
 		$("#overlay-content").html('<script src="https://fast.wistia.com/embed/medias/28jaglq0tq.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_28jaglq0tq videoFoam=true" style="height:100%;position:relative;width:100%">&nbsp;</div></div></div>')
 	});

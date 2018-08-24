@@ -93,7 +93,7 @@ header img{vertical-align: middle;}
 h1{font-size: 40px;}
 .top-list{margin-bottom: 30px; margin-left: 65px;}
 .top-list li{margin-bottom: 15px; list-style-image: url(images/check.svg); text-align: left;}
-#watch_video{margin-left: -250px; vertical-align: bottom;}
+#watch_video{margin-left: -250px; vertical-align: -45px;}
 #green-play{margin: 0 40px 0 10px; vertical-align: middle; cursor: pointer;}
 #green-play:hover{opacity: .5;}
 .dashed{display: inline-block; width: 100px; vertical-align: 17px; border: 0; border-top: 1px dashed;}
@@ -127,7 +127,7 @@ h1{font-size: 40px;}
 #dots ul li.active {background-color: #06A40A;}
 .farmer-content{width: 700px; padding-top: 15px; margin-left: 215px;}
 .quote{position: absolute; right: 0; bottom: -40px;}
-.slider-img{position: absolute;}
+.slider-img{position: absolute; width: 180px;}
 
 /*   fourth-section css   */
 .docbox{padding: 30px; background: #fff; box-shadow: 0 0 2px 1px rgba(0,0,0,0.05), 0 0 1px 0 #ABADAF; font-size: 15px}
@@ -150,7 +150,7 @@ h1{font-size: 40px;}
 
 /*  seventh-section css*/
 .review-div{float: left; width: 30%; position: relative;}
-.review-div p{font-size: 14px; margin: auto; width: 95%; margin-top: 10px;}
+.review-div p{font-size: 14px; margin: auto; width: 95%; margin-top: 10px; text-align: left;}
 .review-quote{bottom: -60px;}
 
 /*  footer css*/
@@ -209,11 +209,18 @@ footer{background: url(images/footer-image.jpg) no-repeat; background-size: cove
 	.mobile-menu{top: 55px;}
 	h1{font-size: 140%;}
 	.mobileFont14{font-size: 14px;}
+	.mobileFont16{font-size: 16px;}
+	.mobileFont30{font-size: 30px;}
 	.mobileMarg10{margin: 10px 0;}
+	.mobileMarg20{margin: 20px 0;}
 	.mobileMarg30{margin: 30px 0;}
 	.mobileMargBot10{margin-bottom: 10px !important;}
+	.mobileMargTop10{margin-top: 10px !important;}
+	.mobileMargTop30{margin-top: 30px !important;}
 	.justMobileShow{display: block;}
 	.justMobileHide{display: none;}
+	.justMobileCenter{text-align: center;}
+	.MobileMarginAuto{margin: auto;}
 	.JMNoMarg{margin: 0 !important}
 	.JM100Per{float: none; width: 100%;}
 	.JMNoPad{padding: 0 !important;}
@@ -238,6 +245,20 @@ footer{background: url(images/footer-image.jpg) no-repeat; background-size: cove
 	.tablet-drink{position: static; float: none; width: 100%; text-align: center;}
 	.super-column{float: none; width: 100%; border: 0; padding: 0 0 50px !important;}
 	#nutrition-facts{margin-bottom: 40px;}
+	.slider-img{width: 50px;}
+	.farmer-content{width: 100%; padding-top: 0px; margin-left: 0px;}
+	.farmer-title{margin-left: 60px;}
+	.docbox{font-size: 14px; background: transparent; box-shadow: none; padding: 10px;}
+	.doc-icon{width: 50px; vertical-align: middle; margin: 0;}
+	.doc-title{float: none !important; display: inline-block; margin-left: 10px;}
+	.oz-logo{width: 50px;}
+	.doctors-logo{width: 115px;}
+	.pbs-logo{width: 65px;}
+	.tablet-column{width: 100%; padding: 30% 0; text-align: center;}
+	#video-div{height: 400px;}
+	.arrow-icon{margin-top: 10px;}
+	.review-div{float: none; width: 100%; text-align: center; margin-bottom: 80px;}
+	#seventh-section .marside5percent{margin: 0 0 80px;}
 }
 
 	</style>
@@ -339,7 +360,7 @@ footer{background: url(images/footer-image.jpg) no-repeat; background-size: cove
 				<hr class="dashed Fleft dashed-long justMobileHide"> <hr class="dashed Fright dashed-long justMobileHide">
 				<div class="clear"></div>
 				<p class="center">Contains 1.5 servings of fruits & vegetables in every scoop!</p>
-				<div class="marg60 mobileMarg30">
+				<div class="marg60 mobileMarg30 justMobileCenter">
 					<div class="icon-div">
 						<img src="images/icon1-1.png" alt="certified Organic icon">
 						<p>Certified<br>Organic</p>
@@ -410,43 +431,51 @@ footer{background: url(images/footer-image.jpg) no-repeat; background-size: cove
 					<p>Amaranth, Quinoa, Millet, Buckwheat,<br> Garbanzo Bean, Lentil, Adzuki, Flax,<br> Sunflower, Pumpkin, Chia & Sesame</p>
 				</div> 
 				<div class="clear"></div>
-				<div id="slide-container" class="marg60 relative">
+				<div id="slide-container" class="marg60 relative mobileMarg20">
 					<h1 class="center">Meet Our Organic<br> Kale Farmers</h1>
 					<div id="slider" class="span">
 						<div class="img image-1">
-							<img src="images/Farmers-Ed.png" alt="Ed Van Drunen Organic Farmer" width="180" class="slider-img">
+							<img src="images/Farmers-Ed.png" alt="Ed Van Drunen Organic Farmer" class="slider-img">
 							<div class="farmer-content">
-								<p class="font20 bold">Ed Van Drunen<p>
-								<p class="marbot20">Co-Founder Van Drunen Farms®</p>
-								<p class="font15">There's a lot of satisfaction in life if you treat people right...It's serving people rather than serving yourself..That's what we try to do with the products that come off this farm. This is our job...to get the best product to the customer as we can...</p>
+								<div class="farmer-title">
+								<p class="font20 bold mobileFont16">Ed Van Drunen<p>
+								<p class="marbot20 mobileFont14">Co-Founder Van Drunen Farms®</p>
+							</div>
+								<p class="font15 mobileFont14">There's a lot of satisfaction in life if you treat people right...It's serving people rather than serving yourself..That's what we try to do with the products that come off this farm. This is our job...to get the best product to the customer as we can...</p>
 							</div>
 							<img src="images/quote.svg" alt="Big quote" class="quote">
 						</div>
 						<div class="img image-2">
-							<img src="images/Farmers-David.png" alt="David Van Drunen Organic Farmer" width="180" class="slider-img">
+							<img src="images/Farmers-David.png" alt="David Van Drunen Organic Farmer" class="slider-img">
 							<div class="farmer-content">
-								<p class="font20 bold">David Van Drunen<p>
-								<p class="marbot20">Assistant to the Director of Agriculture Van Drunen Farms®</p>
+								<div class="farmer-title">
+									<p class="font20 bold">David Van Drunen<p>
+										<p class="marbot20">Assistant to the Director of Agriculture Van Drunen Farms®</p>
+								</div>
 								<p class="font15">It's farming the way that nature really intended the crops to grow. It's farming without herbicides, without pesticides...I learned from my dad...my dad learned from my grandpa...and my grandpa learned from his dad too...it's our way of life really.</p>
 							</div>
 							
 							<img src="images/quote.svg" alt="Big quote" class="quote">
 						</div>
 						<div class="img image-3">
-							<img src="images/Farmers-Jeff.png" alt="Jeff Van Drunen Organic Farmer" width="180" class="slider-img">
+							<img src="images/Farmers-Jeff.png" alt="Jeff Van Drunen Organic Farmer" class="slider-img">
 							<div class="farmer-content">
+							<div class="farmer-title">
 								<p class="font20 bold">Jeff Van Drunen<p>
 								<p class="marbot20">President, FutureCeuticals Van Drunen Farms®</p>
+							</div>
 								<p class="font15">One of the reasons we developed Grown American Superfood is to make it possible for people to get closer to getting those 8 to 11 to 13 serving of fresh whole fruits and vegetables every day. It feels good to us to be in a business where we can actually make something that affects people's health in a positive way.</p>
 							</div>
 							
 							<img src="images/quote.svg" alt="Big quote" class="quote">
 						</div>
 						<div class="img image-4">
-							<img src="images/Farmers-Kevin.png" alt="Kevin Van Drunen Organic Farmer" width="180" class="slider-img">
+							<img src="images/Farmers-Kevin.png" alt="Kevin Van Drunen Organic Farmer" class="slider-img">
 							<div class="farmer-content">
+								<div class="farmer-title">
 								<p class="font20 bold">Kevin Van Drunen<p>
 								<p class="marbot20">President Van Drunen Farms®</p>
+							</div>
 								<p class="font15">We see an opportunity to provide organic to consumers around the country...So that starts from the farm level where the products are grown, how they are handled, how they are shipped, how they are run through our process, even how they are handled through that process, how they are tested.</p>
 							</div>
 							<img src="images/quote.svg" alt="Big quote" class="quote">
@@ -458,15 +487,15 @@ footer{background: url(images/footer-image.jpg) no-repeat; background-size: cove
 				</div>
 			</div> <!-- end of container -->
 		</div> <!-- end of row and third-section -->
-		<div class="row grey-back pad8045 mobilePadBot20" id="fourth-section">
+		<div class="row grey-back pad8045 mobilePadBot20 mobile-row" id="fourth-section">
 			<div class="container">
 				<h1 class="center marbot10">Hear From the Experts</h1>
-				<p class="bold font20 center">"5-7 Serving (of Fruits & Vegetables) a Day reduced risk of<br> dying, during the study period, by 36%" - Dr. Joel Kahn</p>
-				<div class="marg60 martop170">
+				<p class="bold font20 center mobileFont14">"5-7 Serving (of Fruits & Vegetables) a Day reduced risk of<br> dying, during the study period, by 36%" - Dr. Joel Kahn</p>
+				<div class="marg60 martop170 mobileMargTop30">
 					<div class="column47 Fleft mobile100per">
 						<div class="docbox"> <!-- **** need to replace doctor images **** -->
-							<p class="bold Fright">DR. JOEL KAHN</p>
 							<img src="images/doc-kahn.png" alt="Dr. Joel Kahn" class="doc-icon">
+							<p class="bold Fright doc-title">DR. JOEL KAHN</p>
 							<p class="marg20">One of the world's top cardiologists, DR. JOEL KAHN, is known as "America's Heart Healthy Doc".</p>
 							<p class="marg20">A published author and leading healthcare practitioner, Dr. Joel Kahn believes that plant-based nutrition is the most powerful source of preventative medicine on the planet.</p>
 							<p class="marg20">Having practiced traditional cardiology since 1983, he adopted his own personal commitment to a plant-based diet after seeing the transformative benefits of nutrition-based recovery in his own life.</p>
@@ -474,16 +503,16 @@ footer{background: url(images/footer-image.jpg) no-repeat; background-size: cove
 							<p class="marg20">His personal mission is to prevent 1 million heart attacks over the next 2 years by breaking through to the public about how you can prevent and reverse disease by simply adding more fruits and vegetables to your diet.</p>
 						</div>
 					</div>
-					<div class="column47 Fright mobile100per martop110">
+					<div class="column47 Fright mobile100per martop110 mobileMargTop30">
 						<div class="docbox">
-							<p class="bold Fright">DR. KELLYANN PETRUCCI</p>
 							<img src="images/doc-kelly.png" alt="DR. KELLYANN PETRUCCI" class="doc-icon">
+							<p class="bold Fright doc-title">DR. KELLYANN PETRUCCI</p>
 							<p class="marg20">DR. KELLYANN PETRUCCI is a nationally recognized board-certified naturopathic physician and certified nutrition consultant, who has committed her professional career and personal life to educating the medical community and consumers on the benefits of a healthy lifestyle.</p>
 							<p class="marg20">She is a New York Times best selling author and the host of the PBS special, 21 Days to a Slimmer, Younger You.</p>
 							<p class="marg20">As a weight loss and natural anti-aging transformation expert, Dr. Petrucci is a regular guest on television shows including The Doctors, Dr. Oz, and national news programs, and has authored six books.</p>
 						</div>
 						<div class="marg40 center mobileMarBot0">
-						<img src="images/logo-oz.png" alt="the OZ Show logo"> <img src="images/logo-doctors.png" alt="the Doctors Show logo" class="marside20"> <img src="images/logo-PBS.png" alt="PBS logo">
+						<img src="images/logo-oz.png" alt="the OZ Show logo" class="oz-logo"> <img src="images/logo-doctors.png" alt="the Doctors Show logo" class="marside20 doctors-logo"> <img src="images/logo-PBS.png" alt="PBS logo" class="pbs-logo">
 						</div>
 					</div> 
 				<div class="clear"></div>
@@ -494,17 +523,18 @@ footer{background: url(images/footer-image.jpg) no-repeat; background-size: cove
 			<div class="row" id="fifth-section">
 				<div class="container">
 					<div class="column Fright padtop10percent tablet-column">
-						<h1 class="white font50 center">Grown American<br> Superfood...<br>Super Delicious!</h1>
-						<img src="images/play-white.svg" alt="play video icon and text" class="marg3080">
+						<h1 class="white font50 center justMobileHide">Grown American<br> Superfood...<br>Super Delicious!</h1>
+						<img src="images/play-white.svg" alt="play video icon and text" class="marg3080 MobileMarginAuto">
+						<h1 class="white mobileFont30 center justMobileShow">Grown American<br> Superfood...Super Delicious!</h1>
 					</div>
 				</div> <!-- end of container -->
 		</div> <!-- end of row and fourth-section -->
 		</div>
-		<div class="row grey-back" id="sixth-section">
+		<div class="row grey-back mobile-row" id="sixth-section">
 			<div class="container relative">
-				<img src="images/blueberries.png" alt="blueberries" id="blueberries">
+				<img src="images/blueberries.png" alt="blueberries" class="justMobileHide" id="blueberries">
 				<h1 class="center marbot10">Frequently Asked <br>Questions</h1>
-				<div class="martop100 marbot40">
+				<div class="martop100 marbot40 mobileMargTop30">
 					<div class="faq-div">
 						<div class="padbot10"><img src="images/drop_down.svg" class="arrow-icon" alt="arrow down icon"> <span class="font20 bold">What ingredients are in Grown American Superfood?</span></div>
 						<div class="text-box">
@@ -557,7 +587,7 @@ footer{background: url(images/footer-image.jpg) no-repeat; background-size: cove
 				</div>
 			</div> <!-- end of container -->
 		</div> <!-- end of row and sixth-section -->
-		<div class="row" id="seventh-section">
+		<div class="row mobile-row" id="seventh-section">
 			<div class="container">
 				<h1 class="center marbot10">The Reviews<br> Are In</h1>
 				<div class="center">

@@ -43,6 +43,7 @@ a:link, a:visited, a:active{text-decoration: none; color: inherit;}
 .marside10{margin: 0 10px;}
 .marside20{margin: 0 20px;}
 .marleft30{margin-left: 30px;}
+.marbot5{margin-bottom: 5px;}
 .marbot10{margin-bottom: 10px;}
 .marbot15{margin-bottom: 15px;}
 .marbot20{margin-bottom: 20px;}
@@ -52,6 +53,7 @@ a:link, a:visited, a:active{text-decoration: none; color: inherit;}
 .martop40{margin-top: 40px !important;}
 .martop100{margin-top: 100px !important;}
 .martop170{margin-top: 170px !important;}
+.marright5{margin-right: 5px !important;}
 .padbot10{padding-bottom: 10px;}
 .padbot40{padding-bottom: 40px !important;}
 .padtop0{padding-top: 0px !important;}
@@ -65,10 +67,49 @@ a:link, a:visited, a:active{text-decoration: none; color: inherit;}
 .grey-back{background: #f6f6f6; box-shadow: 0 0 2px 1px rgba(0,0,0,0.05), 0 0 1px 0 #ABADAF;}
 .desktop-hide{display: none;}
 .justMobileShow{display: none;}
+.hide, .offer-text{display: none;}
 
-header .row{padding: 10px 0}
+header .row{padding: 10px 20px;}
 
 h1{font-size: 44px;}
+
+/*  packages css  */
+#package-wrapper{max-width: 960px; margin: 60px auto 80px;}
+.package-div{background: #fff; padding: 10px 15px 20px; float: left; text-align: center; border-radius: 2px;
+		  	box-shadow: 0 0 2px 1px rgba(0,0,0,0.05), 0 0 0px 0 #ABADAF; height: 430px; width: 280px;}
+.check-div{width: 32px; height: 32px; border: 1px solid #CCCCCC; border-radius: 2px; background-color: #F6F6F6; text-align: center; float: right;
+			cursor: pointer;}
+.package-list li{font-size: 14px; list-style-image: url(images/check.svg); margin-bottom: 10px;}
+.package-list{text-align: left; margin-left: 25px; margin-top: 15px;}
+#best-package{margin:  -30px 15px 0;}
+.active{background: #06A40A;}
+.white-check{width: 20px; padding-top: 5px;}
+
+/*  billing-payment css  */
+.input-field{box-sizing: border-box; width: 294px; border: 1px solid #CCCCCC; border-radius: 2px;	background-color: #FFFFFF;	
+			box-shadow: 0 0 2px 1px rgba(0,0,0,0.05), 0 0 0px 0 #ABADAF; color: #000; font-size: 16px; padding: 15px; margin-bottom: 10px;}
+.input-field:focus{outline: none;}
+.billing-wrapper{max-width: 600px; margin: 30px auto 150px; position: relative;}
+.address-field{width: 396px;}
+.apt-field{width: 193px;}
+.billing-wrapper .check-div{float: left; background: #fff; width: 22px; height: 22px;}
+.billing-wrapper .check-div .white-check{width: 13px; padding-top: 6px;}
+.email-join{font-size: 12px; float: right; max-width: 565px;}
+.different-div{margin: 30px 0 80px;}
+.different-div p{font-weight: bold; color: #06A40A; cursor: pointer;}
+.full-field{width: 100%;}
+#credit-cards{position: absolute;width: 160px; right: 20px; top: 42px;}
+.dashed-hr{display: inline-block; width: 271px; vertical-align: middle; border: 0; border-top: 1px dashed;}
+.radio-div{margin: 5px 0;}
+label{vertical-align: middle;}
+.paypal-div{margin: 30px 0 45px;}
+.paypal-div img{vertical-align: -18px; margin-left: 20px;}
+.terms{display: inline-block; margin-left: 10px; font-size: 12px;}
+#CTA{width: 100%; border-radius: 2px; background: #06A40A; color: #fff; padding: 15px 0; text-align: center; opacity: .3;}
+#offer-details{padding: 10px 0; font-size: 12px;}
+
+/*  footer css*/
+footer{background: url(images/footer-image.jpg) no-repeat; background-size: cover; height: 100vh; padding-top: 40px; font-size: 12px;}
 
 /*  ipad and mobile css  */
 @media only screen and (max-width: 768px) {
@@ -93,7 +134,7 @@ h1{font-size: 44px;}
 		<header>
 			<div class="row">
 				<div class="container">
-			<a href="homepage.html"><img src="images/logo.svg" alt="Grown American Superfood Logo"></a>
+					<a href="homepage.html"><img src="images/logo.svg" alt="Grown American Superfood Logo"></a>
 				</div> <!-- end of container -->
 			</div> <!-- end of row and header -->
 		</header>
@@ -101,9 +142,110 @@ h1{font-size: 44px;}
 		<div class="row">
 			<div class="container">
 				<h1 class="center">Choose A Package</h1>
+				<div id="package-wrapper">
+					<div class="package-div" id="try-package">
+						<div class="check-div">
+							<img src="images/white-check.png" alt="white checkmark" class="white-check hide">
+						</div>
+						<div class="clear"></div>
+						<img src="images/order-package1-1.png" alt="Grown American Superfood Packages and Free Gifts" class="marbot15">
+						<p class="font20 marbot5"><b>Try Before Buy</b></p>
+						<p>$50 in Free Gifts</p>
+						<ul class="package-list">
+							<li>Free 14-Day Supply</li>
+							<li>Free Recipe Guide</li>
+							<li>Free Shaker Cup</li>
+							<li>An additional 2-month supply</li>
+							<li>Preferred Member best-packageEnrollment</li>
+							<li>Pay only $8.95 S&P Today!*</li>
+						</ul>
+					</div>
+					<div class="package-div" id="best-package">
+						<div class="check-div">
+							<img src="images/white-check.png" alt="white checkmark" class="white-check hide">
+						</div>
+						<div class="clear"></div>
+						<img src="images/order-package2-1.png" alt="Grown American Superfood Packages and Free Gifts" class="marbot15">
+						<p class="font20 marbot5"><b>Best Value Pack</b></p>
+						<p>$50 in Free Gifts! 60% off<br> all Future Shipments</p>
+						<ul class="package-list">
+							<li>Free 14-Day Supply</li>
+							<li>Free Recipe Guide</li>
+							<li>Free Shaker Cup</li>
+							<li>An additional 2-month supply</li>
+							<li>Preferred Member Enrollment</li>
+							<li>Pay only $8.95 S&P Today!*</li>
+						</ul>
+					</div>
+					<div class="package-div" id="month-package">
+						<div class="check-div">
+							<img src="images/white-check.png" alt="white checkmark" class="white-check hide">
+						</div>
+						<div class="clear"></div>
+						<img src="images/order-package3-1.png" alt="Grown American Superfood Packages and Free Gifts" class="marbot15">
+						<p class="font20 marbot5"><b>One Month Supply</b></p>
+						<p>$99.90 + $8.95 S&P<br>One Time Only</p>
+						<ul class="package-list">
+							<li>30-Day Supply</li>
+							<li>Free Recipe Guide</li>
+							<li>Free Shaker Cup</li>
+						</ul>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<h1 class="center" id="billing-info">Billing Info</h1>
+				<div class="billing-wrapper">
+					<form action="">
+						<input type="text" class="input-field marright5" placeholder="First Name"> <input type="text" class="input-field" placeholder="Last Name">
+						<input type="text" class="input-field marright5 address-field" placeholder="Address"> <input type="text" class="input-field apt-field" placeholder="Apt/Suite">
+						<input type="text" class="input-field marright5 apt-field" placeholder="City"> <input type="text" class="input-field marright5 apt-field" placeholder="State"> <input type="text" class="input-field apt-field" placeholder="Zip">
+						<input type="text" class="input-field marright5" placeholder="E-mail"> <input type="text" class="input-field" placeholder="Phone">
+						<div class="check-div">
+							<img src="images/check.svg" alt="green checkmark" class="white-check hide">
+						</div>
+						<p class="email-join">Yes, I would love to join your exclusive email list for health advice, new recipes, special offers and product updates <a href="privacy.html"><b>read our privacy policy.</b></a></p>
+						<div class="clear"></div>
+					</form>
+					<div class="different-div">
+						<p class="Fleft">Add a different shipping address</p>
+						<p class="Fright">Canadian Customers</p>
+					</div>
+				</div>
+				<h1 class="center">Payment Info</h1>
+				<div class="billing-wrapper">
+					<div class="radio-div">
+					 <input type="radio" name="payment" value="credit-card" checked> <label for="credit-card">Pay with Credit Card</label>
+					</div>
+					<form action="" class="marbot20">
+						<input type="text" class="input-field full-field" placeholder="Credit Card Number"> <img src="images/payment-options.png" alt="credit card symbols" id="credit-cards">
+						<input type="text" class="input-field marright5 apt-field" placeholder="Exp Mon"> <input type="text" class="input-field marright5 apt-field" placeholder="Exp Day"> <input type="text" class="input-field apt-field" placeholder="CC Code">
+					</form>
+					<hr class="dashed-hr"> <span class="marside10">OR</span> <hr class="dashed-hr">
+					<div class="paypal-div">
+					 <input type="radio" name="payment" value="paypal" checked> <label for="paypal">Pay with PayPal</label> <a href=""><img src="images/paypal.png" alt="PayPal button"></a>
+				    </div>
+					<div class="check-div">
+						<img src="images/check.svg" alt="green checkmark" class="white-check hide">
+					</div>
+					<p class="terms">Click here to accept the <a href="terms.html"><b>terms &amp; conditions</b> of this sale.</a></p>
+					<div class="clear"></div>
+					<div id="offer-details">
+						<p id="cont-offer" class="offer-text"><b>Offer Details:</b> Enjoy your 14-Day FREE supply of Grown American Superfood and 2 FREE gifts by just paying $8.95 S&P today. As part of our FREE trial offer, we will include an additional 4 bags (30 servings each) of Grown American Superfood with your order. At the end of your two-week trial, if you dont call to cancel and want to keep on getting the best nutrition possible, we'll charge your credit card for the 4-month supply at the VIP discount price of only $39.95 per bag (a 60% discount). Even better, as a VIP member we'll lock in your discount and conveniently send you 4 fresh bags every 60 days thereafter, at the same discounted price of $39.95 per bag plus $9.95 S&P charged to the same card. If for whatever reason you need to cancel at any time, just email or call Customer Service at 1-800-219-6701 and keep the free gifts on us!</p>
+						<p id="try-offer" class="offer-text"><b>Offer Details:</b> Enjoy your 14-Day FREE supply of Grown American Superfood and 2 FREE gifts by just paying $8.95 S&P today. As part of our FREE trial offer, we will include an additional 2-month supply (2 bags) of Grown American Superfood with your order. At the end of your two-week trial, if you dont call to cancel and want to keep on getting the best nutrition possible, we'll charge your credit card for the 2-month supply at the VIP discount price of only $49.95 per bag (a 50% discount). Even better, as a VIP member we'll lock in your discount and conveniently send you 2 fresh bags every 60 days thereafter, at the same discounted price of $49.95 per bag plus $9.95 S&P charged to the same card. If for whatever reason you need to cancel at any time, just email or call Customer Service at 1-800-219-6701 and keep the free gifts on us!</p>
+					</div>
+					<div id="CTA">Order Now</div>
+				</div>
 			</div> <!-- end of container -->
-		</div> <!-- end of row and header -->
+		</div> <!-- end of row -->
+		<footer>
+			<div class="row">
+				<div class="container center">
+					<p class="marbot30">© Copyright <span id="date"></span> Grown American, LLC - All rights Reserved</p>
+					<img src="images/footer-logo.svg" alt="footer logo">
+				</div> <!-- end of container -->
+			</div> <!-- end of row and footer-section -->
+		</footer>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-		<!-- <script src="js/main.js"></script> -->
+		<script src="js/secureOrder.js"></script>
 	</body>
 	</html>

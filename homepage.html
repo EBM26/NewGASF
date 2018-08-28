@@ -4,264 +4,10 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
 	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="css/home-style.css">
 	<link rel="icon" type="image/x-icon" href="images/logo.png" />
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500" rel="stylesheet">
 	<title>Grown American Superfood</title>
-	<style>
-/*   general styling   */ 
-*{text-decoration: none; margin: 0; padding: 0; max-width: 100%;}
-html,body{margin: 0; padding: 0; font-family: 'Montserrat', sans-serif; color: #000; font-size: 16px; letter-spacing: 1px; font-weight: 500;
-		  line-height: 1.4}
-img{border: none;}
-li{list-style-type: none;}
-div{display: block; margin: 0; padding: 0;}
-u{text-decoration: underline;}
-s, .line-through{text-decoration: line-through;}
-i, .italic{font-style: italic;}
-b, .bold{font-weight: bold;}
-a:link, a:visited, a:active{text-decoration: none; color: inherit;}
-.Fright, .FrightConstant{float: right !important;}
-.Fleft{float: left !important;}
-.clear{clear: both;}
-.container{width: 1024px; margin: auto;}
-.row{padding: 80px 15px;}
-.align-left{text-align: left;}
-.inline{display: inline;}
-.inline-block{display: inline-block;}
-.uppercase{text-transform: uppercase;}
-.center{text-align: center;}
-.relative{position: relative;}
-.white{color: #fff;}
-.font15{font-size: 15px;}
-.font20{font-size: 20px;}
-.font50{font-size: 50px;}
-.marg20{margin: 20px 0;}
-.marg40{margin: 40px 0;}
-.marg60{margin: 60px 0;}
-.marg3080{margin: 30px 80px;}
-.marside5percent{margin: 0 5%;}
-.marside10{margin: 0 10px;}
-.marside20{margin: 0 20px;}
-.marleft30{margin-left: 30px;}
-.marbot10{margin-bottom: 10px;}
-.marbot15{margin-bottom: 15px;}
-.marbot20{margin-bottom: 20px;}
-.marbot30{margin-bottom: 30px !important;}
-.marbot40{margin-bottom: 40px !important;}
-.martop20{margin-top: 20px !important;}
-.martop40{margin-top: 40px !important;}
-.martop100{margin-top: 100px !important;}
-.martop170{margin-top: 170px !important;}
-.padbot10{padding-bottom: 10px;}
-.padbot40{padding-bottom: 40px !important;}
-.padtop0{padding-top: 0px !important;}
-.padtop10percent{padding-top: 10%;}
-.padtop20{padding-top: 20px;}
-.padtop30{padding-top: 30px;}
-.padleft50{padding-left: 50px;}
-.column{float: left; width: 50%;}
-.column47{width: 47%;}
-.column53{width: 53%;}
-.grey-back{background: #f6f6f6; box-shadow: 0 0 2px 1px rgba(0,0,0,0.05), 0 0 1px 0 #ABADAF;}
-.desktop-hide{display: none;}
-.justMobileShow{display: none;}
-
-/*   popup css   */
-#overlay{width: 100%; height: 100%; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0,0,0,.9); cursor: pointer; 
-		 -webkit-animation: fadein .5s; animation: fadein .5s; z-index: 200; display: none; overflow: scroll;}
-#close-overlay{right: 30px; top: -50px; z-index: 100; cursor: pointer; padding: 1px 10px; position:absolute; color: #fff; font-weight: 100;
-			  font-size: 30px;}
-
-/*   header css   */
-header{position: fixed; top: 0; background: #fff; z-index: 100; width: 100%;}
-.fixed-nav{box-shadow: 0 0 2px 1px rgba(0,0,0,0.05), 0 0 1px 0 #ABADAF;}
-header .row{padding: 10px 15px;}
-header img{vertical-align: middle;}
-.nav-link, .contact-link{font-weight: bold; margin: 0 23px; cursor: pointer; position: relative;}
-.nav-link:before, .contact-link:before{ content: ""; position: absolute; width: 100%; height: 2px; bottom: -3px; left: 0; background-color: #000; 
-										visibility: hidden; -webkit-transform: scaleX(0); transform: scaleX(0);
-										 -webkit-transition: all 0.2s ease-in-out 0s; transition: all 0.2s ease-in-out 0s;}
-.nav-link:hover:before, .contact-link:hover:before{ visibility: visible; -webkit-transform: scaleX(1); transform: scaleX(1);}
-.CTA{display: inline-block; width: 140px; border-radius: 2px; background-color: #06A40A; color: #fff; font-weight: bold; padding: 15px 0;
-	 cursor: pointer; text-align: center;}
-.CTA:hover{background-color: #045f06;}
-
-/*   first-section css   */
-#first-section{margin-top: 40px;}
-.package-div{position: absolute;}
-.amazon-stars{display: block; padding-left: 80px; margin-top: -15px;}
-h1{font-size: 40px;}
-.top-list{margin-bottom: 30px; margin-left: 65px;}
-.top-list li{margin-bottom: 15px; list-style-image: url(images/check.svg); text-align: left;}
-#watch_video{margin-left: -250px; vertical-align: -45px;}
-#green-play{margin: 0 40px 0 10px; vertical-align: middle; cursor: pointer;}
-#green-play:hover{opacity: .5;}
-.dashed{display: inline-block; width: 100px; vertical-align: 17px; border: 0; border-top: 1px dashed;}
-#tv-logo{position: absolute; top: 185px; left: 40px; transform: rotate(-25deg);}
-.badges{width: 290px;}
-.mobile-list{display: none;}
-
-/*   second-section css   */
-.dashed-long{margin-top: -15px; width: 200px;}
-.icon-div{text-align: center; display: inline-block; font-weight: bold; margin-right: 55px;}
-.icon-div:last-child{margin-right: 0px;}
-.icon-div img{margin-bottom: 10px;}
-.mobile-icon-wrapper{text-align: left; display: inline-block;}
-
-/*   third-section css   */
-#nutrition-facts{width: 240px; margin: 40px auto 80px; border: 1px solid #06A40A; border-radius: 2px; color: #06A40A; padding: 15px 0; 
-				 text-align: center; font-weight: bold; cursor: pointer;}
-#nutrition-facts:hover{background-color: #06A40A; color: #fff;}
-.super-column{text-align: center; padding: 50px 0; width: 49%;}
-.dashed-right-border{border-right: 1px dashed;}
-.dashed-left-border{border-left: 1px dashed;}
-.dashed-bottom-border{border-bottom: 1px dashed;}
-
-/*  slider css  */
-#slider{position: relative; margin: 40px auto 0px; height: 270px; overflow: hidden;}
-#slider .img{position: absolute;}
-#dots ul {text-align: center;}
-#dots ul li {display: inline-block; margin: 0 5px; width: 16px; height: 16px; background-color: #fff; border-radius: 50%; cursor: pointer;
-				border: 1px solid #9B9B9B;}
-#dots ul li:hover {background-color: #06A40A;}
-#dots ul li.active {background-color: #06A40A;}
-.farmer-content{width: 700px; padding-top: 15px; margin-left: 215px;}
-.quote{position: absolute; right: 0; bottom: -40px;}
-.slider-img{position: absolute; width: 180px;}
-
-/*   fourth-section css   */
-.docbox{padding: 30px; background: #fff; box-shadow: 0 0 2px 1px rgba(0,0,0,0.05), 0 0 1px 0 #ABADAF; font-size: 15px}
-.doc-icon{margin-top: -100px; margin-bottom: 10px;}
-
-/*  fifth-section css*/
-#video-div{background: url(images/old-lady2.jpg) no-repeat; width: 100%; height: 660px; background-size: cover; cursor: pointer;}
-#video-div .row{padding: 0 15px;}
-
-/*  sixth-section css*/
-.text-box p{padding-bottom: 10px;}
-.text-box{display: none;}
-.faq-div{cursor: pointer; border-bottom: 1px dashed; padding-bottom: 25px; margin-top: 25px;}
-.transition{transform: rotate(90deg); transition-timing-function: ease-in;}
-.show{display: block;} 
-.hide{display: none;}
-.arrow-icon{float: right;}
-#blueberries{position: absolute; right: -45px; top: -45px;}
-.transition{transform: rotate(180deg); transition-timing-function: ease-in;}
-
-/*  seventh-section css*/
-.review-div{float: left; width: 30%; position: relative;}
-.review-div p{font-size: 14px; margin: auto; width: 95%; margin-top: 10px; text-align: left;}
-.review-quote{bottom: -60px;}
-
-/*  footer css*/
-footer{background: url(images/footer-image.jpg) no-repeat; background-size: cover; height: 100vh; padding-top: 40px; font-size: 12px;}
-
-/* mobile navbar css */
-.mobile-menu{display: none; width: 100%; background: #06A40A; z-index: 9998; padding: 10px 0; position: absolute; top: 80px; left: 0;}
-.mobile-menu ul li{list-style: none; margin-bottom: 10px;}
-.mobile-menu ul li:last-child{margin-bottom: 0px;}
-.mobile-menu ul li a{display: block; text-align: center; text-decoration: none; color: #fff;}
-
-.mobile-menu--open{opacity: 1; display: block;}
-.mobile-nav-button{width: 35px; position: absolute; margin: 2rem; left: 0; top: 0; z-index: 9999; cursor: pointer; height: 30px;}
-.mobile-nav-button .mobile-nav-button__line{width: 100%; height: 3px; background: #06A40A; position: relative; transition: .5s ease;}
-.mobile-nav-button .mobile-nav-button__line:nth-of-type(2){margin: 0.4rem 0;}
-.mobile-nav-button .mobile-nav-button__line--1{transform: rotate(45deg); top: 13px; position: absolute;}
-.mobile-nav-button .mobile-nav-button__line--2{display: none;}
-.mobile-nav-button .mobile-nav-button__line--3{transform: rotate(135deg); top: 13px; position: absolute;}
-
-/*  ipad and mobile css  */
-@media only screen and (max-width: 768px) {
-	.desktop-hide{display: block;}
-	.mobile-hide{display: none;}
-	.container{width: auto;}
-	.mobile-logo{position: absolute; left: 100px; top: 15px;}
-	header{height: 90px;}
-	#mobile-CTA{float: right; margin-top: 5px}
-	.package-div{left: -175px; width: 60%;}
-	#first-section .column53{width: 70%; padding-top: 0;}
-	.top-list{margin-left: 45px;}
-	.dashed{width: 85px;}
-	.amazon-stars{position: absolute; right: 60px; bottom: 5px;}
-	#tv-logo{position: absolute; top: 440px; left: 215px;}
-	.icon-div{width: 99px;}
-	.width66per{width: 66%;}
-	.tablet-drink{position: absolute; right: -60px; top: 60px;}
-	.pad506{padding: 50px 6px;}
-	.pad8045{padding: 80px 45px;}
-	.farmer-content{width: 460px;}
-	.mobile100per{width: 100%;}
-	.martop110{margin-top: 110px;}
-	.mobileMarBot0{margin-bottom: 0;}
-	.mobilePadBot20{padding-bottom: 20px;}
-	.tablet-column{width: 75%; float: none !important; margin: auto; padding-top: 35%;}
-	#blueberries{right: -175px;}
-}
-
-/*  mobile only css  */
-@media only screen and (max-width: 736px) {
-	html,body{font-size: 14px; overflow-x: hidden;}
-	.mobile-nav-button{width: 30px; margin: 1rem; top: 5px;}
-	.mobile-nav-button .mobile-nav-button__line{height: 2px;}
-	.mobile-logo{position: absolute; left: 58px; top: 10px; width: 70px;}
-	#mobile-CTA{margin-top: 0px; width: 120px; padding: 5px 0;}
-	header{height: 55px;}
-	.mobile-menu{top: 55px;}
-	h1{font-size: 140%;}
-	.mobileFont14{font-size: 14px;}
-	.mobileFont16{font-size: 16px;}
-	.mobileFont30{font-size: 30px;}
-	.mobileMarg10{margin: 10px 0;}
-	.mobileMarg20{margin: 20px 0;}
-	.mobileMarg30{margin: 30px 0;}
-	.mobileMargBot10{margin-bottom: 10px !important;}
-	.mobileMargTop10{margin-top: 10px !important;}
-	.mobileMargTop30{margin-top: 30px !important;}
-	.justMobileShow{display: block;}
-	.justMobileHide{display: none;}
-	.justMobileCenter{text-align: center;}
-	.MobileMarginAuto{margin: auto;}
-	.JMNoMarg{margin: 0 !important}
-	.JM100Per{float: none; width: 100%;}
-	.JMNoPad{padding: 0 !important;}
-	.JMNoPadBot{padding-bottom: 0 !important;}
-	.mobile-row{padding: 40px 15px;}
-	.mobile-noBorder{border: 0;}
-
-	/*   first-section css   */
-	#first-section{margin-top: 0px; padding-bottom: 10px;}
-	.package-div{left: -175px; width: 315px;}
-	#first-section .column53{width: 75%;}
-	.amazon-stars{right: 30px; top: 0;}
-	#tv-logo{top: 250px; left: 190px; width: 50px;}
-	#first-section .column53{text-align: left; padding-top: 15px;}
-	.badges{width: 175px; margin-left: 30px;}
-	#mobile-green-play{margin: 0 10px 0 30px; width: 45px; vertical-align: middle;}
-	#justMobileCTA{width: 110px; padding: 10px 0;}
-	.top-list{margin-left: 20px;}
-	.mobile-list{display: block; margin-top: 15%; position: relative; text-align: center;}
-	.icon-div{width: 80px; margin-right: 15px;}
-	.mobile-icon-wrapper{display: block; text-align: center; margin-top: 30px;}
-	.tablet-drink{position: static; float: none; width: 100%; text-align: center;}
-	.super-column{float: none; width: 100%; border: 0; padding: 0 0 50px !important;}
-	#nutrition-facts{margin-bottom: 40px;}
-	.slider-img{width: 50px;}
-	.farmer-content{width: 100%; padding-top: 0px; margin-left: 0px;}
-	.farmer-title{margin-left: 60px;}
-	.docbox{font-size: 14px; background: transparent; box-shadow: none; padding: 10px;}
-	.doc-icon{width: 50px; vertical-align: middle; margin: 0;}
-	.doc-title{float: none !important; display: inline-block; margin-left: 10px;}
-	.oz-logo{width: 50px;}
-	.doctors-logo{width: 115px;}
-	.pbs-logo{width: 65px;}
-	.tablet-column{width: 100%; padding: 30% 0; text-align: center;}
-	#video-div{height: 400px;}
-	.arrow-icon{margin-top: 10px;}
-	.review-div{float: none; width: 100%; text-align: center; margin-bottom: 80px;}
-	#seventh-section .marside5percent{margin: 0 0 80px;}
-}
-
-	</style>
 	<!--[if lt IE 9]>
 	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
@@ -332,7 +78,7 @@ footer{background: url(images/footer-image.jpg) no-repeat; background-size: cove
 					<p class="marg20"><b>Get your free 14-Day Supply and 2 great free gifts</b></p>
 					<ul class="top-list">
 						<li>Total of <b>$50</b> Value</li>
-						<li><b>Free</b> Dr. Kallyann’s Cook Book</li>
+						<li><b>Free</b> Dr. Kallyann's Cook Book</li>
 						<li><b>Free</b> Grown American Superfood Shaker Cup</li>
 					</ul>
 					</div>
@@ -347,7 +93,7 @@ footer{background: url(images/footer-image.jpg) no-repeat; background-size: cove
 					<p class="marg20"><b>Get your free 14-Day Supply<br> and 2 great free gifts</b></p>
 					<ul class="top-list">
 						<li>Total of <b>$50</b> Value</li>
-						<li><b>Free</b> Dr. Kallyann’s Cook Book</li>
+						<li><b>Free</b> Dr. Kallyann's Cook Book</li>
 						<li><b>Free</b> Grown American Superfood Shaker Cup</li>
 					</ul>
 				</div>
@@ -619,7 +365,7 @@ footer{background: url(images/footer-image.jpg) no-repeat; background-size: cove
 					<p class="marbot30">© Copyright <span id="date"></span> Grown American, LLC - All rights Reserved</p>
 					<img src="images/footer-logo.svg" alt="footer logo">
 				</div> <!-- end of container -->
-			</div> <!-- end of row and seventh-section -->
+			</div> <!-- end of row and footer-section -->
 		</footer>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script src="js/main.js"></script>

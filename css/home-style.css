@@ -32,6 +32,7 @@ a:link, a:visited, a:active{text-decoration: none; color: inherit;}
 .marside5percent{margin: 0 5%;}
 .marside10{margin: 0 10px;}
 .marside20{margin: 0 20px;}
+.marright20{margin-right: 20px;}
 .marleft30{margin-left: 30px;}
 .marbot10{margin-bottom: 10px;}
 .marbot15{margin-bottom: 15px;}
@@ -80,7 +81,7 @@ header img{vertical-align: middle;}
 #first-section{margin-top: 40px;}
 .package-div{position: absolute;}
 .amazon-stars{display: block; padding-left: 80px; margin-top: -15px;}
-h1{font-size: 40px;}
+h1{font-size: 39px;}
 .top-list{margin-bottom: 30px; margin-left: 65px;}
 .top-list li{margin-bottom: 15px; list-style-image: url(../images/check.svg); text-align: left;}
 #watch_video{margin-left: -250px; vertical-align: -45px;}
@@ -93,7 +94,7 @@ h1{font-size: 40px;}
 
 /*   second-section css   */
 .dashed-long{margin-top: -15px; width: 200px;}
-.icon-div{text-align: center; display: inline-block; font-weight: bold; margin-right: 55px;}
+.icon-div{text-align: center; display: inline-block; font-weight: bold; margin-right: 55px; width: 156px;}
 .icon-div:last-child{margin-right: 0px;}
 .icon-div img{margin-bottom: 10px;}
 .mobile-icon-wrapper{text-align: left; display: inline-block;}
@@ -116,8 +117,8 @@ h1{font-size: 40px;}
 #dots ul li:hover {background-color: #06A40A;}
 #dots ul li.active {background-color: #06A40A;}
 .farmer-content{width: 700px; padding-top: 15px; margin-left: 215px;}
-.quote{position: absolute; right: 0; bottom: -40px;}
-.slider-img{position: absolute; width: 180px;}
+.quote{position: absolute; right: 0; bottom: -40px; width: 123px !important;}
+.slider-img{position: absolute; width: 180px !important;}
 
 /*   fourth-section css   */
 .docbox{padding: 30px; background: #fff; box-shadow: 0 0 2px 1px rgba(0,0,0,0.05), 0 0 1px 0 #ABADAF; font-size: 15px}

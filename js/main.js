@@ -92,7 +92,6 @@ var slider = function() {
 	// Find width of container div
 	var sliderWidth = $("#slider").width() + 2;
 
-
 	// Create as many navigation dots as there are pictures
 	for (var i = 1; i <= numImages; i++) {
 		$('#dots').find('ul').append($('<li class="dot ' + i + '""></li>'));
@@ -140,32 +139,78 @@ var slider = function() {
 		// Change dots status
 		$('#dots').find('li').removeClass("active");
 		$('#dots').find('.' + currentImage).addClass("active");
+		// If hovering over preview buttons, change picture in preview
+		if(previewHover !== false) {
+			showPreview();
+		}
 	};
 
 	// Set initial slider interval
-	// moveImages = setInterval(function() {
-	// 	slideNextImageLeft();
-	// }, delay);
+	moveImages = setInterval(function() {
+		slideNextImageLeft();
+	}, delay);
+
+	// When next button is clicked
+	$('.next').click(function() {
+		clearInterval(moveImages);
+		moveImages = setInterval(function() {
+			slideNextImageLeft();
+		}, delay);
+		slideNextImageLeft();
+	});
+
+	// When previous button is clicked
+	$('.previous').click(function() {
+		clearInterval(moveImages);
+		moveImages = setInterval(function() {
+			slideNextImageLeft();
+		}, delay);
+		slidePreviousImageRight();
+	});
 
 	// When a navigation dot is clicked
 	$('.dot').click(function() {
-		buttonPressed = $('li').index(this) + 1;
+		buttonPressed = $('#dots li').index(this) + 1;
 		if(buttonPressed !== currentImage) {
 			clearInterval(moveImages);
 			moveImages = setInterval(function() {
-				slidePreviousImageRight();
+				slideNextImageLeft();
 			}, delay);
 			if(currentImage < buttonPressed) {
 				nextImage = buttonPressed;
-				slidePreviousImageRight();
+				slideNextImageLeft();
 			} else {
 				previousImage = buttonPressed;
-				lideNextImageLeft();
+				slidePreviousImageRight();
 			}
 		}
 	});
 
+
+  // Show a preview of next or previous image on hover
+  $('.nav').on('mouseenter', function() {
+    previewHover = $('.nav').index(this) + 1;
+    showPreview();
+  }).on('mouseleave', function() {
+    previewHover = false;
+    $(".preview").css({"background-image": "none"});
+  });
+
+  var showPreview = function() {
+    var whichSide = previewHover;
+    var miniWidth = 100;
+    var whichImage;
+    if(whichSide === 1) {
+      whichImage = previousImage;
+    } else {
+      whichImage = nextImage;
+    }
+    var previewImage = $('.image-' + whichImage).find('img').attr("src");
+    $(".preview:nth-child(" + whichSide + ")").css({"background-image": "url(" + previewImage + ")", "background-size": "cover"});
+  };
+
 };
+
 
 	slider();
 

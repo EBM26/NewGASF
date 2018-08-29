@@ -1,9 +1,9 @@
 $(document).ready(function() {
 
 	// Adding the class of Active
-	$('.check-div').click(function() {
+	$('.order-check').click(function() {
 		if(!$(this).hasClass("active")) {
-			$(".check-div").removeClass("active");
+			$(".order-check").removeClass("active");
 			$(".white-check").addClass("hide");
 			$(this).addClass("active");
 			$(this).find(".white-check").removeClass("hide");
@@ -26,7 +26,27 @@ $(document).ready(function() {
 				$(".offer-text").slideUp()
 		}
 
-	})
+	});
+
+	// more info dropdown on mobile
+	$(".open-info").click(function(){
+
+		if(!$(this).hasClass("active-info")) {
+			$(".open-info").removeClass("active-info")
+			$(".showList").slideUp("slow");
+			$(".arrow-icon").removeClass("transition");
+			$(this).addClass("active-info");
+			$(this).find(".showList").slideDown("slow")
+			$(this).find(".arrow-icon").addClass("transition");
+			}
+
+		    else if($(this).hasClass("active-info")) {
+				$(this).removeClass("active-info")
+				$(".showList").slideUp("slow");
+				$(".arrow-icon").removeClass("transition");
+			  }
+
+	}) // click function
 
 
 	  //  new year

@@ -5,127 +5,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
 	<meta name="format-detection" content="telephone=no">
 	<link rel="icon" type="image/x-icon" href="images/logo.png" />
+	<link rel="stylesheet" href="css/secureOrders.css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500" rel="stylesheet">
 	<title>Grown American Superfood</title>
-	<style>
-/*   general styling   */ 
-*{text-decoration: none; margin: 0; padding: 0; max-width: 100%;}
-html,body{margin: 0; padding: 0; font-family: 'Montserrat', sans-serif; color: #000; font-size: 16px; letter-spacing: 1px; font-weight: 500; background: #f6f6f6;
-		  line-height: 1.4}
-img{border: none;}
-li{list-style-type: none;}
-div{display: block; margin: 0; padding: 0;}
-u{text-decoration: underline;}
-s, .line-through{text-decoration: line-through;}
-i, .italic{font-style: italic;}
-b, .bold{font-weight: bold;}
-a:link, a:visited, a:active{text-decoration: none; color: inherit;}
-.Fright, .FrightConstant{float: right !important;}
-.Fleft{float: left !important;}
-.clear{clear: both;}
-.container{width: 1024px; margin: auto;}
-.row{padding: 20px 15px;}
-.align-left{text-align: left;}
-.inline{display: inline;}
-.inline-block{display: inline-block;}
-.uppercase{text-transform: uppercase;}
-.center{text-align: center;}
-.relative{position: relative;}
-.white{color: #fff;}
-.font15{font-size: 15px;}
-.font20{font-size: 20px;}
-.font50{font-size: 50px;}
-.marg20{margin: 20px 0;}
-.marg40{margin: 40px 0;}
-.marg60{margin: 60px 0;}
-.marg3080{margin: 30px 80px;}
-.marside5percent{margin: 0 5%;}
-.marside10{margin: 0 10px;}
-.marside20{margin: 0 20px;}
-.marleft30{margin-left: 30px;}
-.marbot5{margin-bottom: 5px;}
-.marbot10{margin-bottom: 10px;}
-.marbot15{margin-bottom: 15px;}
-.marbot20{margin-bottom: 20px;}
-.marbot30{margin-bottom: 30px !important;}
-.marbot40{margin-bottom: 40px !important;}
-.martop20{margin-top: 20px !important;}
-.martop40{margin-top: 40px !important;}
-.martop100{margin-top: 100px !important;}
-.martop170{margin-top: 170px !important;}
-.marright5{margin-right: 5px !important;}
-.padbot10{padding-bottom: 10px;}
-.padbot40{padding-bottom: 40px !important;}
-.padtop0{padding-top: 0px !important;}
-.padtop10percent{padding-top: 10%;}
-.padtop20{padding-top: 20px;}
-.padtop30{padding-top: 30px;}
-.padleft50{padding-left: 50px;}
-.column{float: left; width: 50%;}
-.column47{width: 47%;}
-.column53{width: 53%;}
-.grey-back{background: #f6f6f6; box-shadow: 0 0 2px 1px rgba(0,0,0,0.05), 0 0 1px 0 #ABADAF;}
-.desktop-hide{display: none;}
-.justMobileShow{display: none;}
-.hide, .offer-text{display: none;}
-
-header .row{padding: 10px 20px;}
-
-h1{font-size: 44px;}
-
-/*  packages css  */
-#package-wrapper{max-width: 960px; margin: 60px auto 80px;}
-.package-div{background: #fff; padding: 10px 15px 20px; float: left; text-align: center; border-radius: 2px;
-		  	box-shadow: 0 0 2px 1px rgba(0,0,0,0.05), 0 0 0px 0 #ABADAF; height: 430px; width: 280px;}
-.check-div{width: 32px; height: 32px; border: 1px solid #CCCCCC; border-radius: 2px; background-color: #F6F6F6; text-align: center; float: right;
-			cursor: pointer;}
-.package-list li{font-size: 14px; list-style-image: url(images/check.svg); margin-bottom: 10px;}
-.package-list{text-align: left; margin-left: 25px; margin-top: 15px;}
-#best-package{margin:  -30px 15px 0;}
-.active{background: #06A40A;}
-.white-check{width: 20px; padding-top: 5px;}
-
-/*  billing-payment css  */
-.input-field{box-sizing: border-box; width: 294px; border: 1px solid #CCCCCC; border-radius: 2px;	background-color: #FFFFFF;	
-			box-shadow: 0 0 2px 1px rgba(0,0,0,0.05), 0 0 0px 0 #ABADAF; color: #000; font-size: 16px; padding: 15px; margin-bottom: 10px;}
-.input-field:focus{outline: none;}
-.billing-wrapper{max-width: 600px; margin: 30px auto 150px; position: relative;}
-.address-field{width: 396px;}
-.apt-field{width: 193px;}
-.billing-wrapper .check-div{float: left; background: #fff; width: 22px; height: 22px;}
-.billing-wrapper .check-div .white-check{width: 13px; padding-top: 6px;}
-.email-join{font-size: 12px; float: right; max-width: 565px;}
-.different-div{margin: 30px 0 80px;}
-.different-div p{font-weight: bold; color: #06A40A; cursor: pointer;}
-.full-field{width: 100%;}
-#credit-cards{position: absolute;width: 160px; right: 20px; top: 42px;}
-.dashed-hr{display: inline-block; width: 271px; vertical-align: middle; border: 0; border-top: 1px dashed;}
-.radio-div{margin: 5px 0;}
-label{vertical-align: middle;}
-.paypal-div{margin: 30px 0 45px;}
-.paypal-div img{vertical-align: -18px; margin-left: 20px;}
-.terms{display: inline-block; margin-left: 10px; font-size: 12px;}
-#CTA{width: 100%; border-radius: 2px; background: #06A40A; color: #fff; padding: 15px 0; text-align: center; opacity: .3;}
-#offer-details{padding: 10px 0; font-size: 12px;}
-
-/*  footer css*/
-footer{background: url(images/footer-image.jpg) no-repeat; background-size: cover; height: 100vh; padding-top: 40px; font-size: 12px;}
-
-/*  ipad and mobile css  */
-@media only screen and (max-width: 768px) {
-	.desktop-hide{display: block;}
-	.mobile-hide{display: none;}
-	.container{width: auto;}
-	
-}
-
-/*  mobile only css  */
-@media only screen and (max-width: 736px) {
-	html,body{font-size: 14px; overflow-x: hidden;}
-	
-}
-
-	</style>
 	<!--[if lt IE 9]>
 	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
@@ -144,61 +26,77 @@ footer{background: url(images/footer-image.jpg) no-repeat; background-size: cove
 				<h1 class="center">Choose A Package</h1>
 				<div id="package-wrapper">
 					<div class="package-div" id="try-package">
-						<div class="check-div">
+						<div class="check-div order-check">
 							<img src="images/white-check.png" alt="white checkmark" class="white-check hide">
 						</div>
 						<div class="clear"></div>
 						<img src="images/order-package1-1.png" alt="Grown American Superfood Packages and Free Gifts" class="marbot15">
 						<p class="font20 marbot5"><b>Try Before Buy</b></p>
-						<p>$50 in Free Gifts</p>
-						<ul class="package-list">
-							<li>Free 14-Day Supply</li>
-							<li>Free Recipe Guide</li>
-							<li>Free Shaker Cup</li>
-							<li>An additional 2-month supply</li>
-							<li>Preferred Member best-packageEnrollment</li>
-							<li>Pay only $8.95 S&P Today!*</li>
-						</ul>
+						<p class="mobile16">$50 in Free Gifts</p>
+						<div class="open-info">
+						<p class="justMobileShow mobile-info">More Info <img src="images/drop_down.svg" class="arrow-icon" alt="arrow down icon"></p>
+						<div class="justMobileHide showList">
+							<ul class="package-list">
+								<li>Free 14-Day Supply</li>
+								<li>Free Recipe Guide</li>
+								<li>Free Shaker Cup</li>
+								<li>An additional 2-month supply</li>
+								<li>Preferred Member best-packageEnrollment</li>
+								<li>Pay only $8.95 S&P Today!*</li>
+							</ul>
+						</div>
+						</div>
 					</div>
 					<div class="package-div" id="best-package">
-						<div class="check-div">
+						<div class="check-div order-check">
 							<img src="images/white-check.png" alt="white checkmark" class="white-check hide">
 						</div>
 						<div class="clear"></div>
 						<img src="images/order-package2-1.png" alt="Grown American Superfood Packages and Free Gifts" class="marbot15">
 						<p class="font20 marbot5"><b>Best Value Pack</b></p>
-						<p>$50 in Free Gifts! 60% off<br> all Future Shipments</p>
-						<ul class="package-list">
-							<li>Free 14-Day Supply</li>
-							<li>Free Recipe Guide</li>
-							<li>Free Shaker Cup</li>
-							<li>An additional 2-month supply</li>
-							<li>Preferred Member Enrollment</li>
-							<li>Pay only $8.95 S&P Today!*</li>
-						</ul>
+						<p class="mobile16">$50 in Free Gifts! 60% off<br> all Future Shipments</p>
+						<div class="open-info">
+						<p class="justMobileShow mobile-info">More Info <img src="images/drop_down.svg" class="arrow-icon" alt="arrow down icon"></p>
+						<div class="justMobileHide showList">
+							<ul class="package-list">
+								<li>Free 14-Day Supply</li>
+								<li>Free Recipe Guide</li>
+								<li>Free Shaker Cup</li>
+								<li>An additional 2-month supply</li>
+								<li>Preferred Member Enrollment</li>
+								<li>Pay only $8.95 S&P Today!*</li>
+							</ul>
+						</div>
+						</div>
 					</div>
 					<div class="package-div" id="month-package">
-						<div class="check-div">
+						<div class="check-div order-check">
 							<img src="images/white-check.png" alt="white checkmark" class="white-check hide">
 						</div>
 						<div class="clear"></div>
 						<img src="images/order-package3-1.png" alt="Grown American Superfood Packages and Free Gifts" class="marbot15">
 						<p class="font20 marbot5"><b>One Month Supply</b></p>
-						<p>$99.90 + $8.95 S&P<br>One Time Only</p>
+						<p class="mobile16">$99.90 + $8.95 S&P<br>One Time Only</p>
+						<div class="open-info">
+						<p class="justMobileShow mobile-info">More Info <img src="images/drop_down.svg" class="arrow-icon" alt="arrow down icon"></p>
+						<div class="justMobileHide showList">
 						<ul class="package-list">
 							<li>30-Day Supply</li>
 							<li>Free Recipe Guide</li>
 							<li>Free Shaker Cup</li>
 						</ul>
+						</div>
 					</div>
 					<div class="clear"></div>
 				</div>
-				<h1 class="center" id="billing-info">Billing Info</h1>
+				</div> 
+				<div class="clear"></div>
+				<h1 class="center martop40" id="billing-info">Billing Info</h1>
 				<div class="billing-wrapper">
 					<form action="">
 						<input type="text" class="input-field marright5" placeholder="First Name"> <input type="text" class="input-field" placeholder="Last Name">
-						<input type="text" class="input-field marright5 address-field" placeholder="Address"> <input type="text" class="input-field apt-field" placeholder="Apt/Suite">
-						<input type="text" class="input-field marright5 apt-field" placeholder="City"> <input type="text" class="input-field marright5 apt-field" placeholder="State"> <input type="text" class="input-field apt-field" placeholder="Zip">
+						<input type="text" class="input-field marright5 address-field" placeholder="Address"> <input type="text" class="input-field apt-field input-mobile50" placeholder="Apt/Suite">
+						<input type="text" class="input-field marright5 apt-field input-mobile50 noMargRightMobile" placeholder="City"> <input type="text" class="input-field marright5 apt-field input-mobile50 noMargRightMobile" placeholder="State"> <input type="text" class="input-field apt-field input-mobile50" placeholder="Zip">
 						<input type="text" class="input-field marright5" placeholder="E-mail"> <input type="text" class="input-field" placeholder="Phone">
 						<div class="check-div">
 							<img src="images/check.svg" alt="green checkmark" class="white-check hide">
@@ -218,12 +116,16 @@ footer{background: url(images/footer-image.jpg) no-repeat; background-size: cove
 					</div>
 					<form action="" class="marbot20">
 						<input type="text" class="input-field full-field" placeholder="Credit Card Number"> <img src="images/payment-options.png" alt="credit card symbols" id="credit-cards">
-						<input type="text" class="input-field marright5 apt-field" placeholder="Exp Mon"> <input type="text" class="input-field marright5 apt-field" placeholder="Exp Day"> <input type="text" class="input-field apt-field" placeholder="CC Code">
+						<input type="text" class="input-field marright5 apt-field input-mobile33" placeholder="Exp Mon"> <input type="text" class="input-field marright5 apt-field input-mobile33" placeholder="Exp Day"> <input type="text" class="input-field apt-field input-mobile33" placeholder="CC Code">
 					</form>
+					<div class="mobile-center">
 					<hr class="dashed-hr"> <span class="marside10">OR</span> <hr class="dashed-hr">
+					</div>
 					<div class="paypal-div">
+					<div class="mobile-center">
 					 <input type="radio" name="payment" value="paypal" checked> <label for="paypal">Pay with PayPal</label> <a href=""><img src="images/paypal.png" alt="PayPal button"></a>
 				    </div>
+				</div>
 					<div class="check-div">
 						<img src="images/check.svg" alt="green checkmark" class="white-check hide">
 					</div>
@@ -235,8 +137,8 @@ footer{background: url(images/footer-image.jpg) no-repeat; background-size: cove
 					</div>
 					<div id="CTA">Order Now</div>
 				</div>
-			</div> <!-- end of container -->
-		</div> <!-- end of row -->
+		</div><!-- end of container -->
+	</div> <!-- end of row -->
 		<footer>
 			<div class="row">
 				<div class="container center">

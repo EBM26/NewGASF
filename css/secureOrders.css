@@ -1,0 +1,139 @@
+/*   general styling   */ 
+*{text-decoration: none; margin: 0; padding: 0; max-width: 100%;}
+html,body{margin: 0; padding: 0; font-family: 'Montserrat', sans-serif; color: #000; font-size: 16px; letter-spacing: 1px; font-weight: 500; background: #f6f6f6;
+		  line-height: 1.4}
+img{border: none;}
+li{list-style-type: none;}
+div{display: block; margin: 0; padding: 0;}
+u{text-decoration: underline;}
+s, .line-through{text-decoration: line-through;}
+i, .italic{font-style: italic;}
+b, .bold{font-weight: bold;}
+a:link, a:visited, a:active{text-decoration: none; color: inherit;}
+.Fright, .FrightConstant{float: right !important;}
+.Fleft{float: left !important;}
+.clear{clear: both;}
+.container{width: 1024px; margin: auto;}
+.row{padding: 20px 15px;}
+.align-left{text-align: left;}
+.inline{display: inline;}
+.inline-block{display: inline-block;}
+.uppercase{text-transform: uppercase;}
+.center{text-align: center;}
+.relative{position: relative;}
+.white{color: #fff;}
+.font15{font-size: 15px;}
+.font20{font-size: 20px;}
+.font50{font-size: 50px;}
+.marg20{margin: 20px 0;}
+.marg40{margin: 40px 0;}
+.marg60{margin: 60px 0;}
+.marg3080{margin: 30px 80px;}
+.marside5percent{margin: 0 5%;}
+.marside10{margin: 0 10px;}
+.marside20{margin: 0 20px;}
+.marleft30{margin-left: 30px;}
+.marbot5{margin-bottom: 5px;}
+.marbot10{margin-bottom: 10px;}
+.marbot15{margin-bottom: 15px;}
+.marbot20{margin-bottom: 20px;}
+.marbot30{margin-bottom: 30px !important;}
+.marbot40{margin-bottom: 40px !important;}
+.martop20{margin-top: 20px !important;}
+.martop40{margin-top: 40px !important;}
+.martop100{margin-top: 100px !important;}
+.martop170{margin-top: 170px !important;}
+.marright5{margin-right: 5px !important;}
+.padbot10{padding-bottom: 10px;}
+.padbot40{padding-bottom: 40px !important;}
+.padtop0{padding-top: 0px !important;}
+.padtop10percent{padding-top: 10%;}
+.padtop20{padding-top: 20px;}
+.padtop30{padding-top: 30px;}
+.padleft50{padding-left: 50px;}
+.column{float: left; width: 50%;}
+.column47{width: 47%;}
+.column53{width: 53%;}
+.grey-back{background: #f6f6f6; box-shadow: 0 0 2px 1px rgba(0,0,0,0.05), 0 0 1px 0 #ABADAF;}
+.desktop-hide{display: none;}
+.justMobileShow{display: none;}
+.hide, .offer-text{display: none;}
+
+header .row{padding: 10px 20px;}
+
+h1{font-size: 44px;}
+
+/*  packages css  */
+#package-wrapper{max-width: 960px; margin: 60px auto 80px;}
+.package-div{background: #fff; padding: 10px 15px 20px; float: left; text-align: center; border-radius: 2px;
+		  	box-shadow: 0 0 2px 1px rgba(0,0,0,0.05), 0 0 0px 0 #ABADAF; height: 430px; width: 280px;}
+.check-div{width: 32px; height: 32px; border: 1px solid #CCCCCC; border-radius: 2px; background-color: #F6F6F6; text-align: center; float: right;
+			cursor: pointer;}
+.package-list li{font-size: 14px; list-style-image: url(../images/check.svg); margin-bottom: 10px;}
+.package-list{text-align: left; margin-left: 25px; margin-top: 15px;}
+#best-package{margin:  -30px 15px 0;}
+.active{background: #06A40A;}
+.white-check{width: 20px; padding-top: 5px;}
+
+/*  billing-payment css  */
+.input-field{box-sizing: border-box; width: 294px; border: 1px solid #CCCCCC; border-radius: 2px;	background-color: #FFFFFF;	
+			box-shadow: 0 0 2px 1px rgba(0,0,0,0.05), 0 0 0px 0 #ABADAF; color: #000; font-size: 16px; padding: 15px; margin-bottom: 10px;}
+.input-field:focus{outline: none;}
+.billing-wrapper{max-width: 600px; margin: 30px auto 150px; position: relative;}
+.address-field{width: 396px;}
+.apt-field{width: 193px;}
+.billing-wrapper .check-div{float: left; background: #fff; width: 22px; height: 22px;}
+.billing-wrapper .check-div .white-check{width: 13px; padding-top: 6px;}
+.email-join{font-size: 12px; float: right; max-width: 565px;}
+.different-div{margin: 30px 0 80px;}
+.different-div p{font-weight: bold; color: #06A40A; cursor: pointer;}
+.full-field{width: 100%;}
+#credit-cards{position: absolute;width: 160px; right: 20px; top: 42px;}
+.dashed-hr{display: inline-block; width: 271px; vertical-align: middle; border: 0; border-top: 1px dashed;}
+.radio-div{margin: 5px 0;}
+label{vertical-align: middle;}
+.paypal-div{margin: 30px 0 45px;}
+.paypal-div img{vertical-align: -18px; margin-left: 20px;}
+.terms{display: inline-block; margin-left: 10px; font-size: 12px;}
+#CTA{width: 100%; border-radius: 2px; background: #06A40A; color: #fff; padding: 15px 0; text-align: center; opacity: .3;}
+#offer-details{padding: 10px 0; font-size: 12px;}
+
+/*  footer css*/
+footer{background: url(../images/footer-image.jpg) no-repeat; background-size: cover; height: 100vh; padding-top: 40px; font-size: 12px;}
+
+/*  ipad and mobile css  */
+@media only screen and (max-width: 768px) {
+	.desktop-hide{display: block;}
+	.mobile-hide{display: none;}
+	.container{width: auto;}
+	.package-div{width: 209px; font-size: 12px; height: auto;}
+	#best-package{margin:  -30px 10px 0;}
+	.package-list li{font-size: 12px;}
+	.mobile16{font-size: 16px;}
+}
+
+/*  mobile only css  */
+@media only screen and (max-width: 736px) {
+	html,body{font-size: 14px; overflow-x: hidden;}
+	h1{font-size: 25px;}
+	#best-package{margin: 15px auto;}
+	.package-div{width: 90%; margin: auto; float: none;}
+	.justMobileHide{display: none;}
+	.justMobileShow{display: block;}
+	.mobile-info{color: #06A40A; margin-top: 2px;}
+	.arrow-icon{width: 15px; vertical-align: middle;}
+	.transition{transform: rotate(180deg); transition-timing-function: ease-in;}
+	.showList{max-width: 240px;}
+	.input-field{width: 100%; font-size: 14px;}
+	.input-mobile50{width: 49%;}
+	.input-mobile33{width: 32%; margin-right: 0 !important;}
+	.noMargRightMobile{margin-right: 0 !important;}
+	.email-join{max-width: 90%;}
+	.different-div p{float: none !important; text-align: center; margin-top: 20px;}
+	.billing-wrapper{margin: 30px auto 15px;}
+	#credit-cards{display: none;}
+	.mobile-center{text-align: center;}
+	.dashed-hr{width: 40%;}
+	.paypal-div img{vertical-align: middle; margin-left: 5px; width: 46%;}
+	.terms{max-width: 88%;}
+}

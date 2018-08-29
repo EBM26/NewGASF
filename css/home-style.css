@@ -199,6 +199,7 @@ footer{background: url(../images/footer-image.jpg) no-repeat; background-size: c
 	header{height: 55px;}
 	.mobile-menu{top: 55px;}
 	h1{font-size: 140%;}
+	.mobileFont12{font-size: 12px;}
 	.mobileFont14{font-size: 14px;}
 	.mobileFont16{font-size: 16px;}
 	.mobileFont30{font-size: 30px;}
@@ -250,4 +251,6 @@ footer{background: url(../images/footer-image.jpg) no-repeat; background-size: c
 	.arrow-icon{margin-top: 10px;}
 	.review-div{float: none; width: 100%; text-align: center; margin-bottom: 80px;}
 	#seventh-section .marside5percent{margin: 0 0 80px;}
+	.slider-img{width: 50px !important;}
+	#slider{height: 350px;}
 }

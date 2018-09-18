@@ -28,6 +28,7 @@ a:link, a:visited, a:active{text-decoration: none; color: inherit;}
 .marg20{margin: 20px 0;}
 .marg40{margin: 40px 0;}
 .marg60{margin: 60px 0;}
+.marg100{margin: 100px 0;}
 .marg3080{margin: 30px 80px;}
 .marside5percent{margin: 0 5%;}
 .marside10{margin: 0 10px;}
@@ -45,6 +46,7 @@ a:link, a:visited, a:active{text-decoration: none; color: inherit;}
 .martop170{margin-top: 170px !important;}
 .padbot10{padding-bottom: 10px;}
 .padbot40{padding-bottom: 40px !important;}
+.padbot42{padding-bottom: 42px !important;}
 .padtop0{padding-top: 0px !important;}
 .padtop10percent{padding-top: 10%;}
 .padtop20{padding-top: 20px;}
@@ -87,14 +89,14 @@ h1{font-size: 39px;}
 #watch_video{margin-left: -250px; vertical-align: -45px;}
 #green-play{margin: 0 40px 0 10px; vertical-align: middle; cursor: pointer;}
 #green-play:hover{opacity: .5;}
-.dashed{display: inline-block; width: 45px; vertical-align: 17px; border: 0; border-top: 1px dashed;}
+.dashed{display: inline-block; width: 45px; vertical-align: 25px; border: 0; border-top: 1px dashed;}
 #tv-logo{position: absolute; left: 220px; bottom: -20px;}
 .badges{width: 400px;}
 .mobile-list{display: none;}
 
 /*   second-section css   */
 .dashed-long{margin-top: -15px; width: 200px;}
-.icon-div{text-align: center; display: inline-block; font-weight: bold; margin-right: 55px; width: 156px;}
+.icon-div{text-align: center; display: inline-block; font-weight: bold; margin-right: 48px; width: 156px;}
 .icon-div:last-child{margin-right: 0px;}
 .icon-div img{margin-bottom: 10px;}
 .mobile-icon-wrapper{text-align: left; display: inline-block;}
@@ -104,6 +106,7 @@ h1{font-size: 39px;}
 				 text-align: center; font-weight: bold; cursor: pointer;}
 #nutrition-facts:hover{background-color: #06A40A; color: #fff;}
 .super-column{text-align: center; padding: 50px 0; width: 49%;}
+.super-column img{width: 450px;}
 .dashed-right-border{border-right: 1px dashed;}
 .dashed-left-border{border-left: 1px dashed;}
 .dashed-bottom-border{border-bottom: 1px dashed;}
@@ -220,10 +223,9 @@ footer{background: url(../images/footer-image.jpg) no-repeat; background-size: c
 	.mobile-row{padding: 40px 15px;}
 	.mobile-noBorder{border: 0;}
 
-	/*   first-section css   */
 	#first-section{margin-top: 0px; padding-bottom: 10px;}
-	.package-div{left: -175px; width: 315px;}
-	#first-section .column53{width: 75%;}
+	.package-div{left: -185px; width: 315px;}
+	#first-section .column53{width: 70%;}
 	.amazon-stars{right: 30px; top: 0;}
 	#tv-logo{top: 250px; left: 190px; width: 50px;}
 	#first-section .column53{text-align: left; padding-top: 15px;}
@@ -233,6 +235,8 @@ footer{background: url(../images/footer-image.jpg) no-repeat; background-size: c
 	.top-list{margin-left: 20px;}
 	.mobile-list{display: block; margin-top: 15%; position: relative; text-align: center;}
 	.icon-div{width: 80px; margin-right: 15px;}
+	.special-icon{width: 105px;}
+	.special-icon img{width: 80px;}
 	.mobile-icon-wrapper{display: block; text-align: center; margin-top: 30px;}
 	.tablet-drink{position: static; float: none; width: 100%; text-align: center;}
 	.super-column{float: none; width: 100%; border: 0; padding: 0 0 50px !important;}

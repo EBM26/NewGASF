@@ -80,7 +80,7 @@ $(document).ready(function() {
 var slider = function() {
 
 	// Set time delay of slider
-	var delay = 5000;
+	var delay = 15000;
 
 	// Set variables
 	var numImages = $('.img').length;

@@ -82,14 +82,14 @@ header img{vertical-align: middle;}
 .package-div{position: absolute;}
 .amazon-stars{display: block; padding-left: 80px; margin-top: -15px;}
 h1{font-size: 39px;}
-.top-list{margin-bottom: 30px; margin-left: 65px;}
+.top-list{margin-bottom: 30px; margin-left: 75px;}
 .top-list li{margin-bottom: 15px; list-style-image: url(../images/check.svg); text-align: left;}
 #watch_video{margin-left: -250px; vertical-align: -45px;}
 #green-play{margin: 0 40px 0 10px; vertical-align: middle; cursor: pointer;}
 #green-play:hover{opacity: .5;}
-.dashed{display: inline-block; width: 100px; vertical-align: 17px; border: 0; border-top: 1px dashed;}
-#tv-logo{position: absolute; top: 185px; left: 40px; transform: rotate(-25deg);}
-.badges{width: 290px;}
+.dashed{display: inline-block; width: 45px; vertical-align: 17px; border: 0; border-top: 1px dashed;}
+#tv-logo{position: absolute; left: 220px; bottom: -20px;}
+.badges{width: 400px;}
 .mobile-list{display: none;}
 
 /*   second-section css   */
@@ -172,7 +172,7 @@ footer{background: url(../images/footer-image.jpg) no-repeat; background-size: c
 	.package-div{left: -175px; width: 60%;}
 	#first-section .column53{width: 70%; padding-top: 0;}
 	.top-list{margin-left: 45px;}
-	.dashed{width: 85px;}
+	.dashed{width: 35px;}
 	.amazon-stars{position: absolute; right: 60px; bottom: 5px;}
 	#tv-logo{position: absolute; top: 440px; left: 215px;}
 	.icon-div{width: 99px;}

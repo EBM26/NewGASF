@@ -10,6 +10,7 @@ s, .line-through{text-decoration: line-through;}
 i, .italic{font-style: italic;}
 b, .bold{font-weight: bold;}
 a:link, a:visited, a:active{text-decoration: none; color: inherit;}
+sup{font-size: 10px;}
 .Fright, .FrightConstant{float: right !important;}
 .Fleft{float: left !important;}
 .clear{clear: both;}
@@ -66,7 +67,7 @@ h1{font-size: 44px;}
 /*  packages css  */
 #package-wrapper{max-width: 960px; margin: 60px auto 80px;}
 .package-div{background: #fff; padding: 10px 15px 20px; float: left; text-align: center; border-radius: 2px;
-		  	box-shadow: 0 0 2px 1px rgba(0,0,0,0.05), 0 0 0px 0 #ABADAF; height: 430px; width: 280px;}
+		  	box-shadow: 0 0 2px 1px rgba(0,0,0,0.05), 0 0 0px 0 #ABADAF; height: 560px; width: 280px;}
 .check-div{width: 32px; height: 32px; border: 1px solid #CCCCCC; border-radius: 2px; background-color: #F6F6F6; text-align: center; float: right;
 			cursor: pointer;}
 .package-list li{font-size: 14px; list-style-image: url(../images/check.svg); margin-bottom: 10px;}

@@ -9,6 +9,14 @@ $(document).ready(function() {
 	  }, 2000);
 	})
 
+	 // slow scroll
+	 $(".scroll-reviews").click(function(){
+		$('html, body').animate({
+		scrollTop: $("#customer-reviews").offset().top
+		}, 1000);
+	});
+
+
 	// main video overlay play
 	$("#green-play, #mobile-green-play").click(function(){
 		$("#overlay").fadeIn();

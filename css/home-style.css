@@ -51,12 +51,14 @@ a:link, a:visited, a:active{text-decoration: none; color: inherit;}
 .padbot10{padding-bottom: 10px;}
 .padbot40{padding-bottom: 40px !important;}
 .padbot42{padding-bottom: 42px !important;}
+.padbot55{padding-bottom: 55px !important;}
 .padtop0{padding-top: 0px !important;}
 .padtop10percent{padding-top: 10%;}
 .padtop20{padding-top: 20px;}
 .padtop30{padding-top: 30px;}
 .padleft50{padding-left: 50px;}
 .column{float: left; width: 50%;}
+.nopad{padding: 0 !important;}
 .column47{width: 47%;}
 .column53{width: 53%;}
 .grey-back{background: #f6f6f6; box-shadow: 0 0 2px 1px rgba(0,0,0,0.05), 0 0 1px 0 #ABADAF;}
@@ -114,7 +116,7 @@ h1{font-size: 39px;}
 				 text-align: center; font-weight: bold; cursor: pointer;}
 #nutrition-facts:hover{background-color: #06A40A; color: #fff;}
 .super-column{text-align: center; padding: 50px 0; width: 49%;}
-.super-column img{width: 450px;}
+.super-column img{width: 470px; padding-left: 15px;}
 .dashed-right-border{border-right: 1px dashed;}
 .dashed-left-border{border-left: 1px dashed;}
 .dashed-bottom-border{border-bottom: 1px dashed;}
@@ -199,6 +201,7 @@ footer{background: url(../images/footer-image.jpg) no-repeat; background-size: c
 	.mobilePadBot20{padding-bottom: 20px;}
 	.tablet-column{width: 75%; float: none !important; margin: auto; padding-top: 35%;}
 	#blueberries{right: -175px;}
+	
 }
 
 /*  mobile only css  */
@@ -266,4 +269,5 @@ footer{background: url(../images/footer-image.jpg) no-repeat; background-size: c
 	#seventh-section .marside5percent{margin: 0 0 80px;}
 	.slider-img{width: 50px !important;}
 	#slider{height: 350px;}
+	.super-column img{padding-left: 0px;}
 }

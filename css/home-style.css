@@ -26,6 +26,8 @@ a:link, a:visited, a:active{text-decoration: none; color: inherit;}
 .font12{font-size: 12px;}
 .font15{font-size: 15px;}
 .font20{font-size: 20px;}
+.font30{font-size: 30px;}
+.font33{font-size: 33px;}
 .font50{font-size: 50px;}
 .marg5{margin: 5px 0;}
 .marg20{margin: 20px 0;}
@@ -80,7 +82,7 @@ header{position: fixed; top: 0; background: #fff; z-index: 100; width: 100%;}
 .fixed-nav{box-shadow: 0 0 2px 1px rgba(0,0,0,0.05), 0 0 1px 0 #ABADAF;}
 header .row{padding: 10px 15px;}
 header img{vertical-align: middle;}
-.nav-link, .contact-link{font-weight: bold; margin: 0 23px; cursor: pointer; position: relative;}
+.nav-link, .contact-link{font-weight: bold; margin: 0 16px; cursor: pointer; position: relative; font-size: 14px;}
 .nav-link:before, .contact-link:before{ content: ""; position: absolute; width: 100%; height: 2px; bottom: -3px; left: 0; background-color: #000; 
 										visibility: hidden; -webkit-transform: scaleX(0); transform: scaleX(0);
 										 -webkit-transition: all 0.2s ease-in-out 0s; transition: all 0.2s ease-in-out 0s;}
@@ -110,6 +112,7 @@ h1{font-size: 39px;}
 .icon-div:last-child{margin-right: 0px;}
 .icon-div img{margin-bottom: 10px;}
 .mobile-icon-wrapper{text-align: left; display: inline-block;}
+.drinking-column{position: absolute; right: 0; padding-top: 2%;}
 
 /*   third-section css   */
 #nutrition-facts{width: 240px; margin: 40px auto 80px; border: 1px solid #06A40A; border-radius: 2px; color: #06A40A; padding: 15px 0; 
@@ -120,6 +123,7 @@ h1{font-size: 39px;}
 .dashed-right-border{border-right: 1px dashed;}
 .dashed-left-border{border-left: 1px dashed;}
 .dashed-bottom-border{border-bottom: 1px dashed;}
+.kids-pic{border-radius: 10%; margin-left: 10px;}
 
 /*  slider css  */
 #slider{position: relative; margin: 40px auto 0px; height: 270px; overflow: hidden;}
@@ -138,13 +142,13 @@ h1{font-size: 39px;}
 .doc-icon{margin-top: -100px; margin-bottom: 10px;}
 
 /*  fifth-section css*/
-#video-div{background: url(../images/old-lady2.jpg) no-repeat; width: 100%; height: 660px; background-size: cover; cursor: pointer;}
+#video-div{background: url(../images/youngMan1.jpg) no-repeat; width: 100%; height: 660px; background-size: cover; cursor: pointer;}
 #video-div .row{padding: 0 15px;}
 
 /*  sixth-section css*/
 .text-box p{padding-bottom: 10px;}
 .text-box{display: none;}
-.faq-div{cursor: pointer; border-bottom: 1px dashed; padding-bottom: 25px; margin-top: 25px;}
+.faq-div{cursor: pointer; border-bottom: 1px dashed; padding-bottom: 10px; margin-top: 25px;}
 .transition{transform: rotate(90deg); transition-timing-function: ease-in;}
 .show{display: block;} 
 .hide{display: none;}
@@ -191,7 +195,7 @@ footer{background: url(../images/footer-image.jpg) no-repeat; background-size: c
 	#tv-logo{position: absolute; top: 440px; left: 215px;}
 	.icon-div{width: 99px;}
 	.width66per{width: 66%;}
-	.tablet-drink{position: absolute; right: -60px; top: 60px;}
+	.tablet-drink{width: 100%;}
 	.pad506{padding: 50px 6px;}
 	.pad8045{padding: 80px 45px;}
 	.farmer-content{width: 460px;}
@@ -201,7 +205,8 @@ footer{background: url(../images/footer-image.jpg) no-repeat; background-size: c
 	.mobilePadBot20{padding-bottom: 20px;}
 	.tablet-column{width: 75%; float: none !important; margin: auto; padding-top: 35%;}
 	#blueberries{right: -175px;}
-	
+	.kids-pic{margin-left: 0px;}
+	.drinking-column{right: -30%; padding-top: 5%;}
 }
 
 /*  mobile only css  */
@@ -213,7 +218,7 @@ footer{background: url(../images/footer-image.jpg) no-repeat; background-size: c
 	#mobile-CTA{margin-top: 0px; width: 120px; padding: 5px 0;}
 	header{height: 55px;}
 	.mobile-menu{top: 55px;}
-	h1{font-size: 140%;}
+	h1{font-size: 140% !important;}
 	.mobileFont12{font-size: 12px;}
 	.mobileFont14{font-size: 14px;}
 	.mobileFont16{font-size: 16px;}
@@ -250,7 +255,6 @@ footer{background: url(../images/footer-image.jpg) no-repeat; background-size: c
 	.special-icon{width: 105px;}
 	.special-icon img{width: 80px;}
 	.mobile-icon-wrapper{display: block; text-align: center; margin-top: 30px;}
-	.tablet-drink{position: static; float: none; width: 100%; text-align: center;}
 	.super-column{float: none; width: 100%; border: 0; padding: 0 0 50px !important;}
 	#nutrition-facts{margin-bottom: 40px;}
 	.slider-img{width: 50px;}
@@ -270,4 +274,6 @@ footer{background: url(../images/footer-image.jpg) no-repeat; background-size: c
 	.slider-img{width: 50px !important;}
 	#slider{height: 350px;}
 	.super-column img{padding-left: 0px;}
+	.drinking-column{position: static;}
+	.drinking-column img{margin-bottom: -5px;}
 }

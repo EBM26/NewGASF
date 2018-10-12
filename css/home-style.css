@@ -27,6 +27,7 @@ a:link, a:visited, a:active{text-decoration: none; color: inherit;}
 .font14{font-size: 14px;}
 .font15{font-size: 15px;}
 .font20{font-size: 20px !important;}
+.font25{font-size: 25px;}
 .font30{font-size: 30px;}
 .font33{font-size: 33px;}
 .font50{font-size: 50px;}
@@ -57,11 +58,13 @@ a:link, a:visited, a:active{text-decoration: none; color: inherit;}
 .padbot40{padding-bottom: 40px !important;}
 .padbot42{padding-bottom: 42px !important;}
 .padbot55{padding-bottom: 55px !important;}
+.padbot95{padding-bottom: 95px !important;}
 .padtop0{padding-top: 0px !important;}
 .padtop10percent{padding-top: 10%;}
 .padtop20{padding-top: 20px;}
 .padtop30{padding-top: 30px;}
 .padleft50{padding-left: 50px;}
+.pad100{padding: 100px 0;}
 .column{float: left; width: 50%;}
 .nopad{padding: 0 !important;}
 .column47{width: 47%;}
@@ -108,6 +111,7 @@ h1{font-size: 39px;}
 #tv-logo{position: absolute; left: 220px; bottom: -20px;}
 .badges{width: 400px;}
 .mobile-list{display: none;}
+.main-line{max-width: 80%; margin: 20px auto;}
 
 /*   second-section css   */
 .dashed-long{margin-top: -15px; width: 200px;}
@@ -115,7 +119,7 @@ h1{font-size: 39px;}
 .icon-div:last-child{margin-right: 0px;}
 .icon-div img{margin-bottom: 10px;}
 .mobile-icon-wrapper{text-align: left; display: inline-block;}
-.drinking-column{position: absolute; right: 0; padding-top: 2%;}
+.drinking-column{position: absolute; right: 0; padding-top: 2%; width: 35%; margin: auto;}
 
 /*   third-section css   */
 #nutrition-facts{width: 240px; margin: 40px auto 80px; border: 1px solid #06A40A; border-radius: 2px; color: #06A40A; padding: 15px 0; 
@@ -128,6 +132,35 @@ h1{font-size: 39px;}
 .dashed-bottom-border{border-bottom: 1px dashed;}
 .kids-pic{border-radius: 10%; margin-left: 10px;}
 .recipe-div p, .recipe-div li{font-size: 14px;}
+.recipe-div img{max-width: 60%;}
+.fadeout {
+    position: relative; 
+    bottom: 4em;
+    height: 4em;
+    background: -webkit-linear-gradient(
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 1) 100%
+    ); 
+    background-image: -moz-linear-gradient(
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 1) 100%
+    );
+    background-image: -o-linear-gradient(
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 1) 100%
+    );
+    background-image: linear-gradient(
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 1) 100%
+    );
+    background-image: -ms-linear-gradient(
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 1) 100%
+    );
+} 
+.hide-recipe{display: none; margin-bottom: 20px;}
+.recipe-button{width: 200px; margin: auto; display: block; background: transparent; color: #000; border: 1px solid;}
+.recipe-button:hover{background-color: #06A40A; color: #fff;}
 
 /*  slider css  */
 #slider{position: relative; margin: 40px auto 0px; height: 270px; overflow: hidden;}
@@ -153,6 +186,7 @@ h1{font-size: 39px;}
 .text-box p{padding-bottom: 10px;}
 .text-box{display: none;}
 .faq-div{cursor: pointer; border-bottom: 1px dashed; padding-bottom: 10px; margin-top: 25px;}
+.faq-div p, .faq-div span{font-size: 15px;}
 .transition{transform: rotate(90deg); transition-timing-function: ease-in;}
 .show{display: block;} 
 .hide{display: none;}
@@ -165,6 +199,7 @@ h1{font-size: 39px;}
 .review-div p{font-size: 14px; margin: auto; width: 95%; margin-top: 10px; text-align: left;}
 .review-quote{bottom: -60px;}
 .amzn-review-div img{width: 80px; margin-right: 5px; vertical-align: middle;}
+.amzn-review-div p, .amzn-review-div span{font-size: 12px;}
 
 /*  footer css*/
 footer{background: url(../images/footer-image.jpg) no-repeat; background-size: cover; height: 100vh; padding-top: 40px; font-size: 12px;}
@@ -223,7 +258,8 @@ footer{background: url(../images/footer-image.jpg) no-repeat; background-size: c
 	#mobile-CTA{margin-top: 0px; width: 120px; padding: 5px 0;}
 	header{height: 55px;}
 	.mobile-menu{top: 55px;}
-	h1{font-size: 140% !important;}
+	h1{font-size: 160% !important;}
+	h2{font-size: 120% !important;}
 	.mobileFont12{font-size: 12px;}
 	.mobileFont14{font-size: 14px;}
 	.mobileFont16{font-size: 16px;}
@@ -244,6 +280,7 @@ footer{background: url(../images/footer-image.jpg) no-repeat; background-size: c
 	.JMNoPadBot{padding-bottom: 0 !important;}
 	.mobile-row{padding: 40px 15px;}
 	.mobile-noBorder{border: 0;}
+	.mobilePad60{padding: 60px 0;}
 
 	#first-section{margin-top: 0px; padding-bottom: 10px;}
 	.package-div{left: -185px; width: 315px;}
@@ -279,6 +316,7 @@ footer{background: url(../images/footer-image.jpg) no-repeat; background-size: c
 	.slider-img{width: 50px !important;}
 	#slider{height: 350px;}
 	.super-column img{padding-left: 0px;}
-	.drinking-column{position: static;}
+	.drinking-column{position: static; width: 50%;}
 	.drinking-column img{margin-bottom: -5px;}
+	.main-line{max-width: 100%;}
 }

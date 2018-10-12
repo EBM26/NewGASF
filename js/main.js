@@ -243,6 +243,29 @@ var slider = function() {
 		return (this.tog = !this.tog) ? MenuOpen() : MenuClose();
 	});
 
+// recipe button show
+$(".recipe-div").click(function(){
+
+		if(!$(this).hasClass("active")) {
+			$(".recipe-div").removeClass("active")
+			$(".hide-recipe").slideUp();
+			$(".fadeout").show()
+			$(".recipe-button").html("See More");
+			$(this).addClass("active");
+			$(this).find(".hide-recipe").slideDown()
+			$(this).find(".recipe-button").html("See Less");
+			$(this).find(".fadeout").hide();
+			}
+
+		    else if($(this).hasClass("active")) {
+				$(this).removeClass("active")
+				$(".hide-recipe").slideUp();
+				$(".recipe-button").html("See More");
+				$(".fadeout").show();
+			  }
+
+	}) 
+
 }); // end of document function
 
 // adding box shadow when navbar scrolls down

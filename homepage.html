@@ -9,6 +9,20 @@
 	<link rel="icon" type="image/x-icon" href="images/logo.png" />
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500" rel="stylesheet">
 	<title>Grown American Superfood</title>
+	<style>
+		.package-div{padding-top: 55px;}
+		#package2{max-width: 495px; margin-bottom: 20px;}
+		@media only screen and (max-width: 1023px) {
+			#package2{max-width: 95%;}
+			#tv-logo{top: 515px;}
+		}
+		@media only screen and (max-width: 736px) {
+			#package2{max-width: 90%;}
+			.package-div{padding-top: 20px;}
+			#tv-logo{top: 260px;}
+			.mobile-logo{position: absolute; left: 65px; top: 5px; width: 100px;}
+		}
+	</style>
 	<!--[if lt IE 9]>
 	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
@@ -65,7 +79,7 @@
 		<div class="row" id="first-section">
 			<div class="container">
 				<div class="package-div column47 relative">
-					<img src="images/package.svg" alt="Grown American Superfood Package">
+					<img src="images/package2.png" alt="Grown American Superfood Package" id="package2">
 					<img src="images/stars.svg" alt="Amazon stars" class="amazon-stars scroll-reviews hvr-grow">
 					<img src="images/ASOTV.png" alt="as seen on TV logo" id="tv-logo">
 				</div>

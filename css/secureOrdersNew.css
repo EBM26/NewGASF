@@ -68,14 +68,14 @@ header .row{padding: 10px 20px;}
 #packageChoose{color: #0C9A0E; font-size: 44px; position: absolute; top: 40%;}
 
 /*  packages css  */
-#package-wrapper{max-width: 960px; margin: 60px auto 80px;}
-.package-div{background: #fff; padding: 10px 15px 20px; float: left; text-align: center; border-radius: 2px;
-		  	box-shadow: 0 0 2px 1px rgba(0,0,0,0.05), 0 0 0px 0 #ABADAF; height: 635px; width: 280px;}
+#package-wrapper{margin: 40px auto 80px;}
+.package-div{background: #fff; float: left; text-align: center; border-radius: 2px;
+		  	border: 1px solid #ABADAF; height: 635px; width: 316px; box-sizing: border-box;}
 .check-div{width: 32px; height: 32px; border: 1px solid #CCCCCC; border-radius: 2px; background-color: #F6F6F6; text-align: center; float: right;
 			cursor: pointer;}
 .package-list li{font-size: 14px; list-style-image: url(../images/check.svg); margin-bottom: 10px;}
 .package-list{text-align: left; margin-left: 25px; margin-top: 15px;}
-#best-package{margin:  -30px 15px 0;}
+#best-package{margin:  -30px 15px 0; border: 4px solid #06A407; width: 362px;}
 .active{background: #06A40A;}
 .white-check{width: 20px; padding-top: 5px;}
 

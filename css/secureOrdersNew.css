@@ -23,6 +23,7 @@ sup{font-size: 10px;}
 .center{text-align: center;}
 .relative{position: relative;}
 .white{color: #fff;}
+.font14{font-size: 14px;}
 .font15{font-size: 15px;}
 .font20{font-size: 20px;}
 .font50{font-size: 50px;}
@@ -40,6 +41,7 @@ sup{font-size: 10px;}
 .marbot20{margin-bottom: 20px;}
 .marbot30{margin-bottom: 30px !important;}
 .marbot40{margin-bottom: 40px !important;}
+.martop15{margin-top: 15px !important;}
 .martop20{margin-top: 20px !important;}
 .martop40{margin-top: 40px !important;}
 .martop100{margin-top: 100px !important;}
@@ -64,20 +66,27 @@ sup{font-size: 10px;}
 
 header{background: #fff;}
 header .row{padding: 10px 20px;}
+#hero-image{background: url('../images/orderHero.jpg') no-repeat center right; width: 100%; height: 30vh; background-size: cover;
+			padding: 5% 1%;}
 
 #packageChoose{color: #0C9A0E; font-size: 44px; position: absolute; top: 40%;}
 
 /*  packages css  */
 #package-wrapper{margin: 40px auto 80px;}
 .package-div{background: #fff; float: left; text-align: center; border-radius: 2px;
-		  	border: 1px solid #ABADAF; height: 635px; width: 316px; box-sizing: border-box;}
+		  	border: 1px solid #ABADAF; height: 585px; width: 310px; box-sizing: border-box;}
 .check-div{width: 32px; height: 32px; border: 1px solid #CCCCCC; border-radius: 2px; background-color: #F6F6F6; text-align: center; float: right;
 			cursor: pointer;}
 .package-list li{font-size: 14px; list-style-image: url(../images/check.svg); margin-bottom: 10px;}
 .package-list{text-align: left; margin-left: 25px; margin-top: 15px;}
-#best-package{margin:  -30px 15px 0; border: 4px solid #06A407; width: 362px;}
+#best-package{margin:  -30px 15px 0; border: 4px solid #06A407; width: 344px; box-shadow: 0 0 30px 0 rgba(0,0,0,0.62);}
+#month-package{box-shadow: 0 0 20px 0 rgba(0,0,0,0.5);}
 .active{background: #06A40A;}
 .white-check{width: 20px; padding-top: 5px;}
+.open-info{padding: 0 20px;}
+.packageTitle{font-size: 18px; margin: 20px auto 10px;}
+.masterCard{font-size: 11px; text-align: left; margin-top: 15px; font-style: italic;}
+.select-box{padding: 20px; color: #fff; background-color: #ABADAF; margin-top: 15px; font-size: 15px; font-weight: bold; text-align: left;}
 
 /*  billing-payment css  */
 .input-field{box-sizing: border-box; width: 294px; border: 1px solid #CCCCCC; border-radius: 2px;	background-color: #FFFFFF;	
